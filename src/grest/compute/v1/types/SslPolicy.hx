@@ -6,7 +6,8 @@ typedef SslPolicy = {
 	@:optional
 	var creationTimestamp : String;
 	/**
-		A list of features enabled when the selected profile is CUSTOM. The method returns the set of features that can be specified in this list. This field must be empty if the profile is not CUSTOM.
+		A list of features enabled when the selected profile is CUSTOM. The
+		- method returns the set of features that can be specified in this list. This field must be empty if the profile is not CUSTOM.
 	**/
 	@:optional
 	var customFeatures : Array<String>;
@@ -21,7 +22,9 @@ typedef SslPolicy = {
 	@:optional
 	var enabledFeatures : Array<String>;
 	/**
-		Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a SslPolicy. An up-to-date fingerprint must be provided in order to update the SslPolicy, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get() request to retrieve an SslPolicy.
+		Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a SslPolicy. An up-to-date fingerprint must be provided in order to update the SslPolicy, otherwise the request will fail with error 412 conditionNotMet.
+		
+		To see the latest fingerprint, make a get() request to retrieve an SslPolicy.
 	**/
 	@:optional
 	var fingerprint : String;

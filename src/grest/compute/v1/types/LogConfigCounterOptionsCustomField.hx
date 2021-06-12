@@ -1,12 +1,12 @@
 package grest.compute.v1.types;
 typedef LogConfigCounterOptionsCustomField = {
 	/**
-		This is deprecated and has no effect. Do not use.
+		Name is the field name.
 	**/
 	@:optional
 	var name : String;
 	/**
-		This is deprecated and has no effect. Do not use.
+		Value is the field value. It is important that in contrast to the CounterOptions.field, the value here is a constant that is not derived from the IAMContext.
 	**/
 	@:optional
 	var value : String;

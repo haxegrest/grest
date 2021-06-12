@@ -11,7 +11,7 @@ typedef WafExpressionSet = {
 	@:optional
 	var expressions : Array<WafExpressionSetExpression>;
 	/**
-		Google specified expression set ID. The format should be: - E.g. XSS-20170329 required
+		Google specified expression set ID. The format should be: - E.g. XSS-20170329
 	**/
 	@:optional
 	var id : String;

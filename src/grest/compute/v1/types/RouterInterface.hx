@@ -16,7 +16,9 @@ typedef RouterInterface = {
 	@:optional
 	var linkedVpnTunnel : String;
 	/**
-		[Output Only] The resource that configures and manages this interface. - MANAGED_BY_USER is the default value and can be managed directly by users. - MANAGED_BY_ATTACHMENT is an interface that is configured and managed by Cloud Interconnect, specifically, by an InterconnectAttachment of type PARTNER. Google automatically creates, updates, and deletes this type of interface when the PARTNER InterconnectAttachment is created, updated, or deleted. 
+		[Output Only] The resource that configures and manages this interface. 
+		- MANAGED_BY_USER is the default value and can be managed directly by users. 
+		- MANAGED_BY_ATTACHMENT is an interface that is configured and managed by Cloud Interconnect, specifically, by an InterconnectAttachment of type PARTNER. Google automatically creates, updates, and deletes this type of interface when the PARTNER InterconnectAttachment is created, updated, or deleted.
 	**/
 	@:optional
 	var managementType : grest.compute.v1.types.RouterInterface_managementType;

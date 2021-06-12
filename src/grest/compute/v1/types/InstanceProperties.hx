@@ -56,7 +56,7 @@ typedef InstanceProperties = {
 	@:optional
 	var networkInterfaces : Array<NetworkInterface>;
 	/**
-		The private IPv6 google access type for VMs. If not specified, use INHERIT_FROM_SUBNETWORK as default.
+		The private IPv6 google access type for VMs. If not specified, use  INHERIT_FROM_SUBNETWORK as default.
 	**/
 	@:optional
 	var privateIpv6GoogleAccess : grest.compute.v1.types.InstanceProperties_privateIpv6GoogleAccess;

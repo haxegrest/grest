@@ -1,17 +1,17 @@
 package grest.compute.v1.types;
 typedef LogConfigCounterOptions = {
 	/**
-		This is deprecated and has no effect. Do not use.
+		Custom fields.
 	**/
 	@:optional
 	var customFields : Array<LogConfigCounterOptionsCustomField>;
 	/**
-		This is deprecated and has no effect. Do not use.
+		The field value to attribute.
 	**/
 	@:optional
 	var field : String;
 	/**
-		This is deprecated and has no effect. Do not use.
+		The metric to update.
 	**/
 	@:optional
 	var metric : String;

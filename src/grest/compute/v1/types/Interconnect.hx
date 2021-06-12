@@ -51,7 +51,9 @@ typedef Interconnect = {
 	@:optional
 	var interconnectAttachments : Array<String>;
 	/**
-		Type of interconnect, which can take one of the following values: - PARTNER: A partner-managed interconnection shared between customers though a partner. - DEDICATED: A dedicated physical interconnection with the customer. Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
+		Type of interconnect, which can take one of the following values: 
+		- PARTNER: A partner-managed interconnection shared between customers though a partner. 
+		- DEDICATED: A dedicated physical interconnection with the customer. Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
 	**/
 	@:optional
 	var interconnectType : grest.compute.v1.types.Interconnect_interconnectType;
@@ -61,7 +63,9 @@ typedef Interconnect = {
 	@:optional
 	var kind : String;
 	/**
-		Type of link requested, which can take one of the following values: - LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics. Note that this field indicates the speed of each of the links in the bundle, not the speed of the entire bundle.
+		Type of link requested, which can take one of the following values: 
+		- LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics 
+		- LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics. Note that this field indicates the speed of each of the links in the bundle, not the speed of the entire bundle.
 	**/
 	@:optional
 	var linkType : grest.compute.v1.types.Interconnect_linkType;
@@ -81,7 +85,10 @@ typedef Interconnect = {
 	@:optional
 	var nocContactEmail : String;
 	/**
-		[Output Only] The current status of this Interconnect's functionality, which can take one of the following values: - OS_ACTIVE: A valid Interconnect, which is turned up and is ready to use. Attachments may be provisioned on this Interconnect. - OS_UNPROVISIONED: An Interconnect that has not completed turnup. No attachments may be provisioned on this Interconnect. - OS_UNDER_MAINTENANCE: An Interconnect that is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect. 
+		[Output Only] The current status of this Interconnect's functionality, which can take one of the following values: 
+		- OS_ACTIVE: A valid Interconnect, which is turned up and is ready to use. Attachments may be provisioned on this Interconnect. 
+		- OS_UNPROVISIONED: An Interconnect that has not completed turnup. No attachments may be provisioned on this Interconnect. 
+		- OS_UNDER_MAINTENANCE: An Interconnect that is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
 	**/
 	@:optional
 	var operationalStatus : grest.compute.v1.types.Interconnect_operationalStatus;
@@ -106,7 +113,10 @@ typedef Interconnect = {
 	@:optional
 	var selfLink : String;
 	/**
-		[Output Only] The current state of Interconnect functionality, which can take one of the following values: - ACTIVE: The Interconnect is valid, turned up and ready to use. Attachments may be provisioned on this Interconnect. - UNPROVISIONED: The Interconnect has not completed turnup. No attachments may be provisioned on this Interconnect. - UNDER_MAINTENANCE: The Interconnect is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect. 
+		[Output Only] The current state of Interconnect functionality, which can take one of the following values: 
+		- ACTIVE: The Interconnect is valid, turned up and ready to use. Attachments may be provisioned on this Interconnect. 
+		- UNPROVISIONED: The Interconnect has not completed turnup. No attachments may be provisioned on this Interconnect. 
+		- UNDER_MAINTENANCE: The Interconnect is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
 	**/
 	@:optional
 	var state : grest.compute.v1.types.Interconnect_state;

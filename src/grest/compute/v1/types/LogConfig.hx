@@ -1,17 +1,17 @@
 package grest.compute.v1.types;
 typedef LogConfig = {
 	/**
-		This is deprecated and has no effect. Do not use.
+		Cloud audit options.
 	**/
 	@:optional
 	var cloudAudit : LogConfigCloudAuditOptions;
 	/**
-		This is deprecated and has no effect. Do not use.
+		Counter options.
 	**/
 	@:optional
 	var counter : LogConfigCounterOptions;
 	/**
-		This is deprecated and has no effect. Do not use.
+		Data access options.
 	**/
 	@:optional
 	var dataAccess : LogConfigDataAccessOptions;

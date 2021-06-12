@@ -1,7 +1,7 @@
 package grest.compute.v1.types;
 typedef ReservationAffinity = {
 	/**
-		Specifies the type of reservation from which this instance can consume resources: ANY_RESERVATION (default), SPECIFIC_RESERVATION, or NO_RESERVATION. See Consuming reserved instances for examples.
+		Specifies the type of reservation from which this instance can consume resources: ANY_RESERVATION (default), SPECIFIC_RESERVATION, or NO_RESERVATION. See  Consuming reserved instances for examples.
 	**/
 	@:optional
 	var consumeReservationType : grest.compute.v1.types.ReservationAffinity_consumeReservationType;

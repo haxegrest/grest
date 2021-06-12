@@ -1,7 +1,9 @@
 package grest.compute.v1.types;
 typedef BackendServiceFailoverPolicy = {
 	/**
-		This can be set to true only if the protocol is TCP. The default is false.
+		This can be set to true only if the protocol is TCP.
+		
+		The default is false.
 	**/
 	@:optional
 	var disableConnectionDrainOnFailover : Bool;

@@ -21,7 +21,8 @@ typedef Router = {
 	@:optional
 	var description : String;
 	/**
-		Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments). Not currently available publicly. 
+		Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
+		Not currently available publicly.
 	**/
 	@:optional
 	var encryptedInterconnectRouter : Bool;

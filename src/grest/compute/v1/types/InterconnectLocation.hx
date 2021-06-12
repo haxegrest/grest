@@ -16,7 +16,12 @@ typedef InterconnectLocation = {
 	@:optional
 	var city : String;
 	/**
-		[Output Only] Continent for this location, which can take one of the following values: - AFRICA - ASIA_PAC - EUROPE - NORTH_AMERICA - SOUTH_AMERICA 
+		[Output Only] Continent for this location, which can take one of the following values: 
+		- AFRICA 
+		- ASIA_PAC 
+		- EUROPE 
+		- NORTH_AMERICA 
+		- SOUTH_AMERICA
 	**/
 	@:optional
 	var continent : grest.compute.v1.types.InterconnectLocation_continent;
@@ -71,7 +76,9 @@ typedef InterconnectLocation = {
 	@:optional
 	var selfLink : String;
 	/**
-		[Output Only] The status of this InterconnectLocation, which can take one of the following values: - CLOSED: The InterconnectLocation is closed and is unavailable for provisioning new Interconnects. - AVAILABLE: The InterconnectLocation is available for provisioning new Interconnects. 
+		[Output Only] The status of this InterconnectLocation, which can take one of the following values: 
+		- CLOSED: The InterconnectLocation is closed and is unavailable for provisioning new Interconnects. 
+		- AVAILABLE: The InterconnectLocation is available for provisioning new Interconnects.
 	**/
 	@:optional
 	var status : grest.compute.v1.types.InterconnectLocation_status;
