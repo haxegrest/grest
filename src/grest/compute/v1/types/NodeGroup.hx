@@ -33,7 +33,7 @@ typedef NodeGroup = {
 	@:optional
 	var locationHint : String;
 	/**
-		Specifies how to handle instances when a node in the group undergoes maintenance. Set to one of: DEFAULT, RESTART_IN_PLACE, or MIGRATE_WITHIN_NODE_GROUP. The default value is DEFAULT. For more information, see  Maintenance policies.
+		Specifies how to handle instances when a node in the group undergoes maintenance. Set to one of: DEFAULT, RESTART_IN_PLACE, or MIGRATE_WITHIN_NODE_GROUP. The default value is DEFAULT. For more information, see Maintenance policies.
 	**/
 	@:optional
 	var maintenancePolicy : grest.compute.v1.types.NodeGroup_maintenancePolicy;

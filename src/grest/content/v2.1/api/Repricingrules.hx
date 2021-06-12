@@ -13,7 +13,7 @@ interface Repricingrules {
 		Deletes a repricing rule in your Merchant Center account.
 	**/
 	@:delete("/content/v2.1/$merchantId/repricingrules/$ruleId")
-	function delete(merchantId:String, ruleId:String):Void;
+	function delete(merchantId:String, ruleId:String):tink.core.Noise;
 	/**
 		Retrieves a repricing rule from your Merchant Center account.
 	**/

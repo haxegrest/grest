@@ -8,7 +8,8 @@ interface Revisions {
 		Flag that specifies whether the new deployment replaces other deployed revisions of the shared flow in the environment. Set `override` to `true` to replace other deployed revisions. By default, `override` is `false` and the deployment is rejected if other revisions of the shared flow are deployed in the environment.
 	**/
 	@:optional
-	var override : Bool; }):grest.apigee.v1.types.GoogleCloudApigeeV1Deployment;
+	@:formField("override")
+	var override_ : Bool; }):grest.apigee.v1.types.GoogleCloudApigeeV1Deployment;
 	/**
 		Gets the deployment of a shared flow revision and actual state reported by runtime pods.
 	**/

@@ -14,7 +14,7 @@ interface Reports {
 		Downloads a report file encoded in UTF-8.
 	**/
 	@:get("/doubleclicksearch/v2/reports/$reportId/files/$reportFragment")
-	function getFile(reportId:String, reportFragment:String):Void;
+	function getFile(reportId:String, reportFragment:String):tink.core.Noise;
 	/**
 		Inserts a report request into the reporting system.
 	**/

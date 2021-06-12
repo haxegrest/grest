@@ -28,7 +28,7 @@ interface ProductSets {
 		Asynchronous API that imports a list of reference images to specified product sets based on a list of image information. The google.longrunning.Operation API can be used to keep track of the progress and results of the request. `Operation.metadata` contains `BatchOperationMetadata`. (progress) `Operation.response` contains `ImportProductSetsResponse`. (results) The input source of this method is a csv file on Google Cloud Storage. For the format of the csv file please see ImportProductSetsGcsSource.csv_file_uri.
 	**/
 	@:post("/v1/$parent/productSets:import")
-	function import(parent:String, body:grest.vision.v1.types.ImportProductSetsRequest):grest.vision.v1.types.Operation;
+	function import_(parent:String, body:grest.vision.v1.types.ImportProductSetsRequest):grest.vision.v1.types.Operation;
 	/**
 		Lists ProductSets in an unspecified order. Possible errors: * Returns INVALID_ARGUMENT if page_size is greater than 100, or less than 1.
 	**/

@@ -13,7 +13,7 @@ interface Products {
 		The Content API Supplemental Feed ID.
 	**/
 	@:optional
-	var feedId : String; }):Void;
+	var feedId : String; }):tink.core.Noise;
 	/**
 		Retrieves a product from your Merchant Center account.
 	**/

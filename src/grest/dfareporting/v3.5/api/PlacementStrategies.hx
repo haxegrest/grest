@@ -4,7 +4,7 @@ interface PlacementStrategies {
 		Deletes an existing placement strategy.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/placementStrategies/$id")
-	function delete(profileId:String, id:String):Void;
+	function delete(profileId:String, id:String):tink.core.Noise;
 	/**
 		Gets one placement strategy by ID.
 	**/

@@ -4,7 +4,7 @@ interface UserRoles {
 		Deletes an existing user role.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/userRoles/$id")
-	function delete(profileId:String, id:String):Void;
+	function delete(profileId:String, id:String):tink.core.Noise;
 	/**
 		Gets one user role by ID.
 	**/

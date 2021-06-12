@@ -4,7 +4,7 @@ interface CreativeFieldValues {
 		Deletes an existing creative field value.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/creativeFields/$creativeFieldId/creativeFieldValues/$id")
-	function delete(profileId:String, creativeFieldId:String, id:String):Void;
+	function delete(profileId:String, creativeFieldId:String, id:String):tink.core.Noise;
 	/**
 		Gets one creative field value by ID.
 	**/

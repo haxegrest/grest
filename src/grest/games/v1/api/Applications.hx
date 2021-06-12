@@ -30,7 +30,7 @@ interface Applications {
 		Indicate that the currently authenticated user is playing your application.
 	**/
 	@:post("/games/v1/applications/played")
-	function played():Void;
+	function played():tink.core.Noise;
 	/**
 		Verifies the auth token provided with this request is for the application with the specified ID, and returns the ID of the player it was granted for.
 	**/

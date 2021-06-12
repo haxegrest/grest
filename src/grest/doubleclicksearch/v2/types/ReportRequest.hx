@@ -14,7 +14,9 @@ typedef ReportRequest = {
 		A list of filters to be applied to the report.\ The maximum number of filters per request is 300.
 	**/
 	@:optional
-	var filters : Array<{ var column : ReportApiColumnSpec; var operator : String; var values : Array<tink.json.Value>; }>;
+	var filters : Array<{ var column : ReportApiColumnSpec; @:formField("operator")
+	@:json("operator")
+	var operator_ : String; var values : Array<tink.json.Value>; }>;
 	/**
 		Determines if removed entities should be included in the report. Defaults to `false`. Deprecated, please use `includeRemovedEntities` instead.
 	**/

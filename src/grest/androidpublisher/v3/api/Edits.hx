@@ -17,7 +17,7 @@ interface Edits {
 		Deletes an app edit.
 	**/
 	@:delete("/androidpublisher/v3/applications/$packageName/edits/$editId")
-	function delete(packageName:String, editId:String):Void;
+	function delete(packageName:String, editId:String):tink.core.Noise;
 	@:sub("/")
 	var deobfuscationfiles : grest.androidpublisher.v3.api.edits.Deobfuscationfiles;
 	@:sub("/")

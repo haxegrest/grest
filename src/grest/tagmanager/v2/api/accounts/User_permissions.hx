@@ -9,7 +9,7 @@ interface User_permissions {
 		Removes a user from the account, revoking access to it and all of its containers.
 	**/
 	@:delete("/tagmanager/v2/$path")
-	function delete(path:String):Void;
+	function delete(path:String):tink.core.Noise;
 	/**
 		Gets a user's Account & Container access.
 	**/

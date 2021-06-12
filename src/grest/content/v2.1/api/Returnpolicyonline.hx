@@ -9,7 +9,7 @@ interface Returnpolicyonline {
 		Deletes an existing return policy.
 	**/
 	@:delete("/content/v2.1/$merchantId/returnpolicyonline/$returnPolicyId")
-	function delete(merchantId:String, returnPolicyId:String):Void;
+	function delete(merchantId:String, returnPolicyId:String):tink.core.Noise;
 	/**
 		Gets an existing return policy.
 	**/

@@ -8,7 +8,7 @@ interface Datasets {
 		If True, delete all the tables in the dataset. If False and the dataset contains tables, the request will fail. Default is False
 	**/
 	@:optional
-	var deleteContents : Bool; }):Void;
+	var deleteContents : Bool; }):tink.core.Noise;
 	/**
 		Returns the dataset specified by datasetID.
 	**/

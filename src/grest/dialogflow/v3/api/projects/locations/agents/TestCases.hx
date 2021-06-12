@@ -38,7 +38,7 @@ interface TestCases {
 		Imports the test cases from a Cloud Storage bucket or a local file. It always creates new test cases and won't overwite any existing ones. The provided ID in the imported test case is neglected.
 	**/
 	@:post("/v3/$parent/testCases:import")
-	function import(parent:String, body:grest.dialogflow.v3.types.GoogleCloudDialogflowCxV3ImportTestCasesRequest):grest.dialogflow.v3.types.GoogleLongrunningOperation;
+	function import_(parent:String, body:grest.dialogflow.v3.types.GoogleCloudDialogflowCxV3ImportTestCasesRequest):grest.dialogflow.v3.types.GoogleLongrunningOperation;
 	/**
 		Fetches a list of test cases for a given agent.
 	**/

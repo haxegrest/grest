@@ -4,7 +4,7 @@ interface ContentCategories {
 		Deletes an existing content category.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/contentCategories/$id")
-	function delete(profileId:String, id:String):Void;
+	function delete(profileId:String, id:String):tink.core.Noise;
 	/**
 		Gets one content category by ID.
 	**/

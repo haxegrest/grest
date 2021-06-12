@@ -9,7 +9,7 @@ interface Returncarrier {
 		Delete a return carrier in the merchant account.
 	**/
 	@:delete("/content/v2.1/accounts/$accountId/returncarrier/$carrierAccountId")
-	function delete(accountId:String, carrierAccountId:String):Void;
+	function delete(accountId:String, carrierAccountId:String):tink.core.Noise;
 	/**
 		Lists available return carriers in the merchant account.
 	**/

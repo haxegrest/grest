@@ -13,7 +13,7 @@ interface Queries {
 		Deletes a stored query as well as the associated stored reports.
 	**/
 	@:delete("/doubleclickbidmanager/v1.1/query/$queryId")
-	function deletequery(queryId:String):Void;
+	function deletequery(queryId:String):tink.core.Noise;
 	/**
 		Retrieves a stored query.
 	**/
@@ -40,5 +40,5 @@ interface Queries {
 		If true, tries to run the query asynchronously.
 	**/
 	@:optional
-	var asynchronous : Bool; }, body:grest.doubleclickbidmanager.v1.1.types.RunQueryRequest):Void;
+	var asynchronous : Bool; }, body:grest.doubleclickbidmanager.v1.1.types.RunQueryRequest):tink.core.Noise;
 }

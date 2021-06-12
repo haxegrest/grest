@@ -4,12 +4,12 @@ interface Tasks {
 		Clears all completed tasks from the specified task list. The affected tasks will be marked as 'hidden' and no longer be returned by default when retrieving all tasks for a task list.
 	**/
 	@:post("/tasks/v1/lists/$tasklist/clear")
-	function clear(tasklist:String):Void;
+	function clear(tasklist:String):tink.core.Noise;
 	/**
 		Deletes the specified task from the task list.
 	**/
 	@:delete("/tasks/v1/lists/$tasklist/tasks/$task")
-	function delete(tasklist:String, task:String):Void;
+	function delete(tasklist:String, task:String):tink.core.Noise;
 	/**
 		Returns the specified task.
 	**/

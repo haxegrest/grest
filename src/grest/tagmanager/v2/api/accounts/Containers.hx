@@ -9,7 +9,7 @@ interface Containers {
 		Deletes a Container.
 	**/
 	@:delete("/tagmanager/v2/$path")
-	function delete(path:String):Void;
+	function delete(path:String):tink.core.Noise;
 	@:sub("/")
 	var environments : grest.tagmanager.v2.api.accounts.containers.Environments;
 	/**

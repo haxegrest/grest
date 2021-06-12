@@ -4,7 +4,7 @@ interface Comments {
 		Deletes a resource.
 	**/
 	@:delete("/youtube/v3/comments")
-	function delete(query:{ var id : String; }):Void;
+	function delete(query:{ var id : String; }):tink.core.Noise;
 	/**
 		Inserts a new resource into this collection.
 	**/
@@ -48,7 +48,7 @@ interface Comments {
 	function markAsSpam(query:{ /**
 		Flags the comments with the given IDs as spam in the caller's opinion.
 	**/
-	var id : String; }):Void;
+	var id : String; }):tink.core.Noise;
 	/**
 		Sets the moderation status of one or more comments.
 	**/
@@ -63,7 +63,7 @@ interface Comments {
 	var id : String; /**
 		Specifies the requested moderation status. Note, comments can be in statuses, which are not available through this call. For example, this call does not allow to mark a comment as 'likely spam'. Valid values: MODERATION_STATUS_PUBLISHED, MODERATION_STATUS_HELD_FOR_REVIEW, MODERATION_STATUS_REJECTED.
 	**/
-	var moderationStatus : grest.youtube.v3.types.Api_Comments_setModerationStatus_moderationStatus; }):Void;
+	var moderationStatus : grest.youtube.v3.types.Api_Comments_setModerationStatus_moderationStatus; }):tink.core.Noise;
 	/**
 		Updates an existing resource.
 	**/

@@ -53,7 +53,7 @@ interface Permissions {
 		Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an administrator of the domain to which the shared drive belongs.
 	**/
 	@:optional
-	var useDomainAdminAccess : Bool; }):Void;
+	var useDomainAdminAccess : Bool; }):tink.core.Noise;
 	/**
 		Gets a permission by ID.
 	**/

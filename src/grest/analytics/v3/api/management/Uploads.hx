@@ -4,7 +4,7 @@ interface Uploads {
 		Delete data associated with a previous upload.
 	**/
 	@:post("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/customDataSources/$customDataSourceId/deleteUploadData")
-	function deleteUploadData(accountId:String, webPropertyId:String, customDataSourceId:String, body:grest.analytics.v3.types.AnalyticsDataimportDeleteUploadDataRequest):Void;
+	function deleteUploadData(accountId:String, webPropertyId:String, customDataSourceId:String, body:grest.analytics.v3.types.AnalyticsDataimportDeleteUploadDataRequest):tink.core.Noise;
 	/**
 		List uploads to which the user has access.
 	**/

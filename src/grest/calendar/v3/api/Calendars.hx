@@ -4,12 +4,12 @@ interface Calendars {
 		Clears a primary calendar. This operation deletes all events associated with the primary calendar of an account.
 	**/
 	@:post("/calendar/v3/calendars/$calendarId/clear")
-	function clear(calendarId:String):Void;
+	function clear(calendarId:String):tink.core.Noise;
 	/**
 		Deletes a secondary calendar. Use calendars.clear for clearing all events on primary calendars.
 	**/
 	@:delete("/calendar/v3/calendars/$calendarId")
-	function delete(calendarId:String):Void;
+	function delete(calendarId:String):tink.core.Noise;
 	/**
 		Returns metadata for a calendar.
 	**/

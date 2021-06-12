@@ -9,7 +9,7 @@ interface Comments {
 		Deletes a comment.
 	**/
 	@:delete("/drive/v3/files/$fileId/comments/$commentId")
-	function delete(fileId:String, commentId:String):Void;
+	function delete(fileId:String, commentId:String):tink.core.Noise;
 	/**
 		Gets a comment by ID.
 	**/

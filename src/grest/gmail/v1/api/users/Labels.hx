@@ -9,7 +9,7 @@ interface Labels {
 		Immediately and permanently deletes the specified label and removes it from any messages and threads that it is applied to.
 	**/
 	@:delete("/gmail/v1/users/$userId/labels/$id")
-	function delete(userId:String, id:String):Void;
+	function delete(userId:String, id:String):tink.core.Noise;
 	/**
 		Gets the specified label.
 	**/

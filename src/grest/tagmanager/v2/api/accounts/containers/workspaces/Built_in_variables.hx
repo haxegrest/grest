@@ -17,7 +17,7 @@ interface Built_in_variables {
 		The types of built-in variables to delete.
 	**/
 	@:optional
-	var type : grest.tagmanager.v2.types.Api_Built_in_variables_delete_type; }):Void;
+	var type : grest.tagmanager.v2.types.Api_Built_in_variables_delete_type; }):tink.core.Noise;
 	/**
 		Lists all the enabled Built-In Variables of a GTM Container.
 	**/

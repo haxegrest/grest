@@ -1,12 +1,12 @@
 package grest.compute.v1.types;
 typedef LogConfigCloudAuditOptions = {
 	/**
-		Information used by the Cloud Audit Logging pipeline.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var authorizationLoggingOptions : AuthorizationLoggingOptions;
 	/**
-		The log_name to populate in the Cloud Audit Record.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var logName : grest.compute.v1.types.LogConfigCloudAuditOptions_logName;

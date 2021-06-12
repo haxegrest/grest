@@ -4,7 +4,7 @@ interface ProfileUserLinks {
 		Removes a user from the given view (profile).
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/profiles/$profileId/entityUserLinks/$linkId")
-	function delete(accountId:String, webPropertyId:String, profileId:String, linkId:String):Void;
+	function delete(accountId:String, webPropertyId:String, profileId:String, linkId:String):tink.core.Noise;
 	/**
 		Adds a new user to the given view (profile).
 	**/

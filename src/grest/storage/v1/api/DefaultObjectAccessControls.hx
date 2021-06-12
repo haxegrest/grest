@@ -12,7 +12,7 @@ interface DefaultObjectAccessControls {
 		The project to be billed for this request. Required for Requester Pays buckets.
 	**/
 	@:optional
-	var userProject : String; }):Void;
+	var userProject : String; }):tink.core.Noise;
 	/**
 		Returns the default object ACL entry for the specified entity on the specified bucket.
 	**/

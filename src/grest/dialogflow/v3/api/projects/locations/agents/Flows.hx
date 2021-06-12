@@ -45,7 +45,7 @@ interface Flows {
 		Imports the specified flow to the specified agent from a binary file.
 	**/
 	@:post("/v3/$parent/flows:import")
-	function import(parent:String, body:grest.dialogflow.v3.types.GoogleCloudDialogflowCxV3ImportFlowRequest):grest.dialogflow.v3.types.GoogleLongrunningOperation;
+	function import_(parent:String, body:grest.dialogflow.v3.types.GoogleCloudDialogflowCxV3ImportFlowRequest):grest.dialogflow.v3.types.GoogleLongrunningOperation;
 	/**
 		Returns the list of all flows in the specified agent.
 	**/

@@ -6,17 +6,17 @@ interface Messages {
 		Deletes many messages by message ID. Provides no guarantees that messages were not already deleted or even existed at all.
 	**/
 	@:post("/gmail/v1/users/$userId/messages/batchDelete")
-	function batchDelete(userId:String, body:grest.gmail.v1.types.BatchDeleteMessagesRequest):Void;
+	function batchDelete(userId:String, body:grest.gmail.v1.types.BatchDeleteMessagesRequest):tink.core.Noise;
 	/**
 		Modifies the labels on the specified messages.
 	**/
 	@:post("/gmail/v1/users/$userId/messages/batchModify")
-	function batchModify(userId:String, body:grest.gmail.v1.types.BatchModifyMessagesRequest):Void;
+	function batchModify(userId:String, body:grest.gmail.v1.types.BatchModifyMessagesRequest):tink.core.Noise;
 	/**
 		Immediately and permanently deletes the specified message. This operation cannot be undone. Prefer `messages.trash` instead.
 	**/
 	@:delete("/gmail/v1/users/$userId/messages/$id")
-	function delete(userId:String, id:String):Void;
+	function delete(userId:String, id:String):tink.core.Noise;
 	/**
 		Gets the specified message.
 	**/
@@ -34,7 +34,7 @@ interface Messages {
 		Imports a message into only this user's mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message. Note: This function doesn't trigger forwarding rules or filters set up by the user.
 	**/
 	@:post("/gmail/v1/users/$userId/messages/import")
-	function import(userId:String, query:{ /**
+	function import_(userId:String, query:{ /**
 		Mark the email as permanently deleted (not TRASH) and only visible in Google Vault to a Vault administrator. Only used for G Suite accounts.
 	**/
 	@:optional

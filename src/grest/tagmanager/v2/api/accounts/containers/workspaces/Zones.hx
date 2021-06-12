@@ -9,7 +9,7 @@ interface Zones {
 		Deletes a GTM Zone.
 	**/
 	@:delete("/tagmanager/v2/$path")
-	function delete(path:String):Void;
+	function delete(path:String):tink.core.Noise;
 	/**
 		Gets a GTM Zone.
 	**/

@@ -4,7 +4,7 @@ interface Profiles {
 		Deletes a view (profile).
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/profiles/$profileId")
-	function delete(accountId:String, webPropertyId:String, profileId:String):Void;
+	function delete(accountId:String, webPropertyId:String, profileId:String):tink.core.Noise;
 	/**
 		Gets a view (profile) to which the user has access.
 	**/

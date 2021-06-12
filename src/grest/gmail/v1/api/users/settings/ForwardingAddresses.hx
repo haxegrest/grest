@@ -9,7 +9,7 @@ interface ForwardingAddresses {
 		Deletes the specified forwarding address and revokes any verification that may have been required. This method is only available to service account clients that have been delegated domain-wide authority.
 	**/
 	@:delete("/gmail/v1/users/$userId/settings/forwardingAddresses/$forwardingEmail")
-	function delete(userId:String, forwardingEmail:String):Void;
+	function delete(userId:String, forwardingEmail:String):tink.core.Noise;
 	/**
 		Gets the specified forwarding address.
 	**/

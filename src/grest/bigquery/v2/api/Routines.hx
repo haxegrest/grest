@@ -4,7 +4,7 @@ interface Routines {
 		Deletes the routine specified by routineId from the dataset.
 	**/
 	@:delete("/bigquery/v2/projects/$projectId/datasets/$datasetId/routines/$routineId")
-	function delete(projectId:String, datasetId:String, routineId:String):Void;
+	function delete(projectId:String, datasetId:String, routineId:String):tink.core.Noise;
 	/**
 		Gets the specified routine resource by routine ID.
 	**/

@@ -4,7 +4,7 @@ interface Subscriptions {
 		Deletes a resource.
 	**/
 	@:delete("/youtube/v3/subscriptions")
-	function delete(query:{ var id : String; }):Void;
+	function delete(query:{ var id : String; }):tink.core.Noise;
 	/**
 		Inserts a new resource into this collection.
 	**/

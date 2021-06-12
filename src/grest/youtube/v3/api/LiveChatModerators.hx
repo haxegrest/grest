@@ -4,7 +4,7 @@ interface LiveChatModerators {
 		Deletes a chat moderator.
 	**/
 	@:delete("/youtube/v3/liveChat/moderators")
-	function delete(query:{ var id : String; }):Void;
+	function delete(query:{ var id : String; }):tink.core.Noise;
 	/**
 		Inserts a new resource into this collection.
 	**/

@@ -4,7 +4,7 @@ interface Webapps {
 		Deletes an existing web app.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/webApps/$webAppId")
-	function delete(enterpriseId:String, webAppId:String):Void;
+	function delete(enterpriseId:String, webAppId:String):tink.core.Noise;
 	/**
 		Gets an existing web app.
 	**/

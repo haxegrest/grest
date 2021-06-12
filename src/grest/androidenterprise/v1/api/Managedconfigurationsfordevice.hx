@@ -4,7 +4,7 @@ interface Managedconfigurationsfordevice {
 		Removes a per-device managed configuration for an app for the specified device.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/users/$userId/devices/$deviceId/managedConfigurationsForDevice/$managedConfigurationForDeviceId")
-	function delete(enterpriseId:String, userId:String, deviceId:String, managedConfigurationForDeviceId:String):Void;
+	function delete(enterpriseId:String, userId:String, deviceId:String, managedConfigurationForDeviceId:String):tink.core.Noise;
 	/**
 		Retrieves details of a per-device managed configuration.
 	**/

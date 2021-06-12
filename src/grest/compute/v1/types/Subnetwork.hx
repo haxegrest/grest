@@ -21,9 +21,7 @@ typedef Subnetwork = {
 	@:optional
 	var externalIpv6Prefix : String;
 	/**
-		Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a Subnetwork. An up-to-date fingerprint must be provided in order to update the Subnetwork, otherwise the request will fail with error 412 conditionNotMet.
-		
-		To see the latest fingerprint, make a get() request to retrieve a Subnetwork.
+		Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a Subnetwork. An up-to-date fingerprint must be provided in order to update the Subnetwork, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get() request to retrieve a Subnetwork.
 	**/
 	@:optional
 	var fingerprint : String;
@@ -78,9 +76,7 @@ typedef Subnetwork = {
 	@:optional
 	var privateIpGoogleAccess : Bool;
 	/**
-		The private IPv6 google access type for the VMs in this subnet. This is an expanded field of enablePrivateV6Access. If both fields are set, privateIpv6GoogleAccess will take priority.
-		
-		This field can be both set at resource creation time and updated using patch.
+		The private IPv6 google access type for the VMs in this subnet. This is an expanded field of enablePrivateV6Access. If both fields are set, privateIpv6GoogleAccess will take priority. This field can be both set at resource creation time and updated using patch.
 	**/
 	@:optional
 	var privateIpv6GoogleAccess : grest.compute.v1.types.Subnetwork_privateIpv6GoogleAccess;
@@ -110,9 +106,7 @@ typedef Subnetwork = {
 	@:optional
 	var selfLink : String;
 	/**
-		The stack type for this subnet to identify whether the IPv6 feature is enabled or not. If not specified IPV4_ONLY will be used.
-		
-		This field can be both set at resource creation time and updated using patch.
+		The stack type for this subnet to identify whether the IPv6 feature is enabled or not. If not specified IPV4_ONLY will be used. This field can be both set at resource creation time and updated using patch.
 	**/
 	@:optional
 	var stackType : grest.compute.v1.types.Subnetwork_stackType;

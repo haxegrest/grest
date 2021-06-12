@@ -9,7 +9,7 @@ interface Comments {
 		Deletes a comment by blog id, post id and comment id.
 	**/
 	@:delete("/v3/blogs/$blogId/posts/$postId/comments/$commentId")
-	function delete(blogId:String, postId:String, commentId:String):Void;
+	function delete(blogId:String, postId:String, commentId:String):tink.core.Noise;
 	/**
 		Gets a comment by id.
 	**/

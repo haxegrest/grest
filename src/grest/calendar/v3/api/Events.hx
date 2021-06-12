@@ -14,7 +14,7 @@ interface Events {
 		Guests who should receive notifications about the deletion of the event.
 	**/
 	@:optional
-	var sendUpdates : grest.calendar.v3.types.Api_Events_delete_sendUpdates; }):Void;
+	var sendUpdates : grest.calendar.v3.types.Api_Events_delete_sendUpdates; }):tink.core.Noise;
 	/**
 		Returns an event.
 	**/
@@ -36,7 +36,7 @@ interface Events {
 		Imports an event. This operation is used to add a private copy of an existing event to a calendar.
 	**/
 	@:post("/calendar/v3/calendars/$calendarId/events/import")
-	function import(calendarId:String, query:{ /**
+	function import_(calendarId:String, query:{ /**
 		Version number of conference data supported by the API client. Version 0 assumes no conference data support and ignores conference data in the event's body. Version 1 enables support for copying of ConferenceData as well as for creating new conferences using the createRequest field of conferenceData. The default is 0.
 	**/
 	@:optional

@@ -4,7 +4,7 @@ interface Sessions {
 		Deletes a session specified by the given session ID.
 	**/
 	@:delete("/fitness/v1/users/$userId/sessions/$sessionId")
-	function delete(userId:String, sessionId:String):Void;
+	function delete(userId:String, sessionId:String):tink.core.Noise;
 	/**
 		Lists sessions previously created.
 	**/

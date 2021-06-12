@@ -43,7 +43,8 @@ interface Domainmappings {
 		Optional encoded string to continue paging.
 	**/
 	@:optional
-	var continue : String; /**
+	@:formField("continue")
+	var continue_ : String; /**
 		Allows to filter resources based on a specific value for a field name. Send this in a query string format. i.e. 'metadata.name%3Dlorem'. Not currently used by Cloud Run.
 	**/
 	@:optional

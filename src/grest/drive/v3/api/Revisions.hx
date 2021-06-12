@@ -4,7 +4,7 @@ interface Revisions {
 		Permanently deletes a file version. You can only delete revisions for files with binary content in Google Drive, like images or videos. Revisions for other files, like Google Docs or Sheets, and the last remaining file version can't be deleted.
 	**/
 	@:delete("/drive/v3/files/$fileId/revisions/$revisionId")
-	function delete(fileId:String, revisionId:String):Void;
+	function delete(fileId:String, revisionId:String):tink.core.Noise;
 	/**
 		Gets a revision's metadata or content by ID.
 	**/

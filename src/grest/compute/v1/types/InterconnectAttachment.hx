@@ -6,19 +6,7 @@ typedef InterconnectAttachment = {
 	@:optional
 	var adminEnabled : Bool;
 	/**
-		Provisioned bandwidth capacity for the interconnect attachment. For attachments of type DEDICATED, the user can set the bandwidth. For attachments of type PARTNER, the Google Partner that is operating the interconnect must set the bandwidth. Output only for PARTNER type, mutable for PARTNER_PROVIDER and DEDICATED, and can take one of the following values: 
-		- BPS_50M: 50 Mbit/s 
-		- BPS_100M: 100 Mbit/s 
-		- BPS_200M: 200 Mbit/s 
-		- BPS_300M: 300 Mbit/s 
-		- BPS_400M: 400 Mbit/s 
-		- BPS_500M: 500 Mbit/s 
-		- BPS_1G: 1 Gbit/s 
-		- BPS_2G: 2 Gbit/s 
-		- BPS_5G: 5 Gbit/s 
-		- BPS_10G: 10 Gbit/s 
-		- BPS_20G: 20 Gbit/s 
-		- BPS_50G: 50 Gbit/s
+		Provisioned bandwidth capacity for the interconnect attachment. For attachments of type DEDICATED, the user can set the bandwidth. For attachments of type PARTNER, the Google Partner that is operating the interconnect must set the bandwidth. Output only for PARTNER type, mutable for PARTNER_PROVIDER and DEDICATED, and can take one of the following values: - BPS_50M: 50 Mbit/s - BPS_100M: 100 Mbit/s - BPS_200M: 200 Mbit/s - BPS_300M: 300 Mbit/s - BPS_400M: 400 Mbit/s - BPS_500M: 500 Mbit/s - BPS_1G: 1 Gbit/s - BPS_2G: 2 Gbit/s - BPS_5G: 5 Gbit/s - BPS_10G: 10 Gbit/s - BPS_20G: 20 Gbit/s - BPS_50G: 50 Gbit/s 
 	**/
 	@:optional
 	var bandwidth : grest.compute.v1.types.InterconnectAttachment_bandwidth;
@@ -53,18 +41,12 @@ typedef InterconnectAttachment = {
 	@:optional
 	var description : String;
 	/**
-		Desired availability domain for the attachment. Only available for type PARTNER, at creation time, and can take one of the following values: 
-		- AVAILABILITY_DOMAIN_ANY 
-		- AVAILABILITY_DOMAIN_1 
-		- AVAILABILITY_DOMAIN_2 For improved reliability, customers should configure a pair of attachments, one per availability domain. The selected availability domain will be provided to the Partner via the pairing key, so that the provisioned circuit will lie in the specified domain. If not specified, the value will default to AVAILABILITY_DOMAIN_ANY.
+		Desired availability domain for the attachment. Only available for type PARTNER, at creation time, and can take one of the following values: - AVAILABILITY_DOMAIN_ANY - AVAILABILITY_DOMAIN_1 - AVAILABILITY_DOMAIN_2 For improved reliability, customers should configure a pair of attachments, one per availability domain. The selected availability domain will be provided to the Partner via the pairing key, so that the provisioned circuit will lie in the specified domain. If not specified, the value will default to AVAILABILITY_DOMAIN_ANY.
 	**/
 	@:optional
 	var edgeAvailabilityDomain : grest.compute.v1.types.InterconnectAttachment_edgeAvailabilityDomain;
 	/**
-		Indicates the user-supplied encryption option of this VLAN attachment (interconnectAttachment). Can only be specified at attachment creation for PARTNER or DEDICATED attachments. Possible values are: 
-		- NONE - This is the default value, which means that the VLAN attachment carries unencrypted traffic. VMs are able to send traffic to, or receive traffic from, such a VLAN attachment. 
-		- IPSEC - The VLAN attachment carries only encrypted traffic that is encrypted by an IPsec device, such as an HA VPN gateway or third-party IPsec VPN. VMs cannot directly send traffic to, or receive traffic from, such a VLAN attachment. To use IPsec-encrypted Cloud Interconnect, the VLAN attachment must be created with this option. 
-		Not currently available publicly.
+		Indicates the user-supplied encryption option of this VLAN attachment (interconnectAttachment). Can only be specified at attachment creation for PARTNER or DEDICATED attachments. Possible values are: - NONE - This is the default value, which means that the VLAN attachment carries unencrypted traffic. VMs are able to send traffic to, or receive traffic from, such a VLAN attachment. - IPSEC - The VLAN attachment carries only encrypted traffic that is encrypted by an IPsec device, such as an HA VPN gateway or third-party IPsec VPN. VMs cannot directly send traffic to, or receive traffic from, such a VLAN attachment. To use *IPsec-encrypted Cloud Interconnect*, the VLAN attachment must be created with this option. Not currently available publicly. 
 	**/
 	@:optional
 	var encryption : grest.compute.v1.types.InterconnectAttachment_encryption;
@@ -84,8 +66,7 @@ typedef InterconnectAttachment = {
 	@:optional
 	var interconnect : String;
 	/**
-		List of URL of addresses that have been reserved for the VLAN attachment. Used only for the VLAN attachment that has the encryption option as IPSEC. The addresses must be regional internal IP address ranges. When creating an HA VPN gateway over the VLAN attachment, if the attachment is configured to use a regional internal IP address, then the VPN gateway's IP address is allocated from the IP address range specified here. For example, if the HA VPN gateway's interface 0 is paired to this VLAN attachment, then a regional internal IP address for the VPN gateway interface 0 will be allocated from the IP address specified for this VLAN attachment. If this field is not specified when creating the VLAN attachment, then later on when creating an HA VPN gateway on this VLAN attachment, the HA VPN gateway's IP address is allocated from the regional external IP address pool.
-		Not currently available publicly.
+		List of URL of addresses that have been reserved for the VLAN attachment. Used only for the VLAN attachment that has the encryption option as IPSEC. The addresses must be regional internal IP address ranges. When creating an HA VPN gateway over the VLAN attachment, if the attachment is configured to use a regional internal IP address, then the VPN gateway's IP address is allocated from the IP address range specified here. For example, if the HA VPN gateway's interface 0 is paired to this VLAN attachment, then a regional internal IP address for the VPN gateway interface 0 will be allocated from the IP address specified for this VLAN attachment. If this field is not specified when creating the VLAN attachment, then later on when creating an HA VPN gateway on this VLAN attachment, the HA VPN gateway's IP address is allocated from the regional external IP address pool. Not currently available publicly. 
 	**/
 	@:optional
 	var ipsecInternalAddresses : Array<String>;
@@ -105,9 +86,7 @@ typedef InterconnectAttachment = {
 	@:optional
 	var name : String;
 	/**
-		[Output Only] The current status of whether or not this interconnect attachment is functional, which can take one of the following values: 
-		- OS_ACTIVE: The attachment has been turned up and is ready to use. 
-		- OS_UNPROVISIONED: The attachment is not ready to use yet, because turnup is not complete.
+		[Output Only] The current status of whether or not this interconnect attachment is functional, which can take one of the following values: - OS_ACTIVE: The attachment has been turned up and is ready to use. - OS_UNPROVISIONED: The attachment is not ready to use yet, because turnup is not complete. 
 	**/
 	@:optional
 	var operationalStatus : grest.compute.v1.types.InterconnectAttachment_operationalStatus;
@@ -147,21 +126,12 @@ typedef InterconnectAttachment = {
 	@:optional
 	var selfLink : String;
 	/**
-		[Output Only] The current state of this attachment's functionality. Enum values ACTIVE and UNPROVISIONED are shared by DEDICATED/PRIVATE, PARTNER, and PARTNER_PROVIDER interconnect attachments, while enum values PENDING_PARTNER, PARTNER_REQUEST_RECEIVED, and PENDING_CUSTOMER are used for only PARTNER and PARTNER_PROVIDER interconnect attachments. This state can take one of the following values: 
-		- ACTIVE: The attachment has been turned up and is ready to use. 
-		- UNPROVISIONED: The attachment is not ready to use yet, because turnup is not complete. 
-		- PENDING_PARTNER: A newly-created PARTNER attachment that has not yet been configured on the Partner side. 
-		- PARTNER_REQUEST_RECEIVED: A PARTNER attachment is in the process of provisioning after a PARTNER_PROVIDER attachment was created that references it. 
-		- PENDING_CUSTOMER: A PARTNER or PARTNER_PROVIDER attachment that is waiting for a customer to activate it. 
-		- DEFUNCT: The attachment was deleted externally and is no longer functional. This could be because the associated Interconnect was removed, or because the other side of a Partner attachment was deleted.
+		[Output Only] The current state of this attachment's functionality. Enum values ACTIVE and UNPROVISIONED are shared by DEDICATED/PRIVATE, PARTNER, and PARTNER_PROVIDER interconnect attachments, while enum values PENDING_PARTNER, PARTNER_REQUEST_RECEIVED, and PENDING_CUSTOMER are used for only PARTNER and PARTNER_PROVIDER interconnect attachments. This state can take one of the following values: - ACTIVE: The attachment has been turned up and is ready to use. - UNPROVISIONED: The attachment is not ready to use yet, because turnup is not complete. - PENDING_PARTNER: A newly-created PARTNER attachment that has not yet been configured on the Partner side. - PARTNER_REQUEST_RECEIVED: A PARTNER attachment is in the process of provisioning after a PARTNER_PROVIDER attachment was created that references it. - PENDING_CUSTOMER: A PARTNER or PARTNER_PROVIDER attachment that is waiting for a customer to activate it. - DEFUNCT: The attachment was deleted externally and is no longer functional. This could be because the associated Interconnect was removed, or because the other side of a Partner attachment was deleted. 
 	**/
 	@:optional
 	var state : grest.compute.v1.types.InterconnectAttachment_state;
 	/**
-		The type of interconnect attachment this is, which can take one of the following values: 
-		- DEDICATED: an attachment to a Dedicated Interconnect. 
-		- PARTNER: an attachment to a Partner Interconnect, created by the customer. 
-		- PARTNER_PROVIDER: an attachment to a Partner Interconnect, created by the partner.
+		The type of interconnect attachment this is, which can take one of the following values: - DEDICATED: an attachment to a Dedicated Interconnect. - PARTNER: an attachment to a Partner Interconnect, created by the customer. - PARTNER_PROVIDER: an attachment to a Partner Interconnect, created by the partner. 
 	**/
 	@:optional
 	var type : grest.compute.v1.types.InterconnectAttachment_type;

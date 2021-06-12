@@ -31,7 +31,7 @@ typedef GoogleCloudSaasacceleratorManagementProvidersV1Instance = {
 	@:optional
 	var maintenanceSettings : GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings;
 	/**
-		Unique name of the resource. It uses the form: `projects/{project_id|project_number}/locations/{location_id}/instances/{instance_id}` Note: Either project_id or project_number can be used, but keep it consistent with other APIs (e.g. RescheduleUpdate)
+		Unique name of the resource. It uses the form: `projects/{project_id}/locations/{location_id}/instances/{instance_id}`
 	**/
 	@:optional
 	var name : String;

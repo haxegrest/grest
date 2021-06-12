@@ -83,8 +83,6 @@ interface Domains {
 	**/
 	@:post("/v1/$resource")
 	function setIamPolicy(resource:grest.managedidentities.v1.types.Api_managedidentities_projects_locations_global_domains_setIamPolicy_resource_Command, body:grest.managedidentities.v1.types.SetIamPolicyRequest):grest.managedidentities.v1.types.Policy;
-	@:sub("/")
-	var sqlIntegrations : grest.managedidentities.v1.api.projects.locations.global.domains.SqlIntegrations;
 	/**
 		Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning.
 	**/

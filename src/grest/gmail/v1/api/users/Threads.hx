@@ -4,7 +4,7 @@ interface Threads {
 		Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer `threads.trash` instead.
 	**/
 	@:delete("/gmail/v1/users/$userId/threads/$id")
-	function delete(userId:String, id:String):Void;
+	function delete(userId:String, id:String):tink.core.Noise;
 	/**
 		Gets the specified thread.
 	**/

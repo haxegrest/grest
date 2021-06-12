@@ -4,7 +4,7 @@ interface LeaderboardConfigurations {
 		Delete the leaderboard configuration with the given ID.
 	**/
 	@:delete("/games/v1configuration/leaderboards/$leaderboardId")
-	function delete(leaderboardId:String):Void;
+	function delete(leaderboardId:String):tink.core.Noise;
 	/**
 		Retrieves the metadata of the leaderboard configuration with the given ID.
 	**/

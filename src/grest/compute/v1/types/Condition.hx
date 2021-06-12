@@ -1,27 +1,27 @@
 package grest.compute.v1.types;
 typedef Condition = {
 	/**
-		Trusted attributes supplied by the IAM system.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var iam : grest.compute.v1.types.Condition_iam;
 	/**
-		An operator to apply the subject with.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var op : grest.compute.v1.types.Condition_op;
 	/**
-		Trusted attributes discharged by the service.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var svc : String;
 	/**
-		Trusted attributes supplied by any service that owns resources and uses the IAM system for access control.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var sys : grest.compute.v1.types.Condition_sys;
 	/**
-		The objects of the condition.
+		This is deprecated and has no effect. Do not use.
 	**/
 	@:optional
 	var values : Array<String>;

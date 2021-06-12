@@ -9,7 +9,7 @@ interface Filters {
 		Deletes a filter.
 	**/
 	@:delete("/gmail/v1/users/$userId/settings/filters/$id")
-	function delete(userId:String, id:String):Void;
+	function delete(userId:String, id:String):tink.core.Noise;
 	/**
 		Gets a filter.
 	**/

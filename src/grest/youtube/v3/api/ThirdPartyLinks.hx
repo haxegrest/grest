@@ -14,7 +14,7 @@ interface ThirdPartyLinks {
 	var part : String; /**
 		Type of the link to be deleted.
 	**/
-	var type : grest.youtube.v3.types.Api_ThirdPartyLinks_delete_type; }):Void;
+	var type : grest.youtube.v3.types.Api_ThirdPartyLinks_delete_type; }):tink.core.Noise;
 	/**
 		Inserts a new resource into this collection.
 	**/

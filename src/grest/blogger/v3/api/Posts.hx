@@ -4,7 +4,7 @@ interface Posts {
 		Deletes a post by blog id and post id.
 	**/
 	@:delete("/v3/blogs/$blogId/posts/$postId")
-	function delete(blogId:String, postId:String):Void;
+	function delete(blogId:String, postId:String):tink.core.Noise;
 	/**
 		Gets a post by blog id and post id
 	**/

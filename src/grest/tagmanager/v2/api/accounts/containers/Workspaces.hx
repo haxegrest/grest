@@ -16,7 +16,7 @@ interface Workspaces {
 		Deletes a Workspace.
 	**/
 	@:delete("/tagmanager/v2/$path")
-	function delete(path:String):Void;
+	function delete(path:String):tink.core.Noise;
 	@:sub("/")
 	var folders : grest.tagmanager.v2.api.accounts.containers.workspaces.Folders;
 	/**
@@ -51,7 +51,7 @@ interface Workspaces {
 		When provided, this fingerprint must match the fingerprint of the entity_in_workspace in the merge conflict.
 	**/
 	@:optional
-	var fingerprint : String; }, body:grest.tagmanager.v2.types.Entity):Void;
+	var fingerprint : String; }, body:grest.tagmanager.v2.types.Entity):tink.core.Noise;
 	/**
 		Syncs a workspace to the latest container version by updating all unmodified workspace entities and displaying conflicts for modified entities.
 	**/

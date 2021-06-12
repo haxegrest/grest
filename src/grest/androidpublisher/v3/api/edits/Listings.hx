@@ -4,12 +4,12 @@ interface Listings {
 		Deletes a localized store listing.
 	**/
 	@:delete("/androidpublisher/v3/applications/$packageName/edits/$editId/listings/$language")
-	function delete(packageName:String, editId:String, language:String):Void;
+	function delete(packageName:String, editId:String, language:String):tink.core.Noise;
 	/**
 		Deletes all store listings.
 	**/
 	@:delete("/androidpublisher/v3/applications/$packageName/edits/$editId/listings")
-	function deleteall(packageName:String, editId:String):Void;
+	function deleteall(packageName:String, editId:String):tink.core.Noise;
 	/**
 		Gets a localized store listing.
 	**/

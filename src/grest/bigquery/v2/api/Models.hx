@@ -4,7 +4,7 @@ interface Models {
 		Deletes the model specified by modelId from the dataset.
 	**/
 	@:delete("/bigquery/v2/projects/$projectId/datasets/$datasetId/models/$modelId")
-	function delete(projectId:String, datasetId:String, modelId:String):Void;
+	function delete(projectId:String, datasetId:String, modelId:String):tink.core.Noise;
 	/**
 		Gets the specified model resource by model ID.
 	**/

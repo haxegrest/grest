@@ -4,7 +4,7 @@ interface Acl {
 		Deletes an access control rule.
 	**/
 	@:delete("/calendar/v3/calendars/$calendarId/acl/$ruleId")
-	function delete(calendarId:String, ruleId:String):Void;
+	function delete(calendarId:String, ruleId:String):tink.core.Noise;
 	/**
 		Returns an access control rule.
 	**/

@@ -8,7 +8,7 @@ interface Enterprises {
 		The notification set ID as returned by Enterprises.PullNotificationSet. This must be provided.
 	**/
 	@:optional
-	var notificationSetId : String; }):Void;
+	var notificationSetId : String; }):tink.core.Noise;
 	/**
 		Completes the signup flow, by specifying the Completion token and Enterprise token. This request must not be called multiple times for a given Enterprise Token.
 	**/
@@ -99,5 +99,5 @@ interface Enterprises {
 		Unenrolls an enterprise from the calling EMM.
 	**/
 	@:post("/androidenterprise/v1/enterprises/$enterpriseId/unenroll")
-	function unenroll(enterpriseId:String):Void;
+	function unenroll(enterpriseId:String):tink.core.Noise;
 }

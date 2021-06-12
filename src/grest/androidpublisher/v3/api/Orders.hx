@@ -8,5 +8,5 @@ interface Orders {
 		Whether to revoke the purchased item. If set to true, access to the subscription or in-app item will be terminated immediately. If the item is a recurring subscription, all future payments will also be terminated. Consumed in-app items need to be handled by developer's app. (optional).
 	**/
 	@:optional
-	var revoke : Bool; }):Void;
+	var revoke : Bool; }):tink.core.Noise;
 }

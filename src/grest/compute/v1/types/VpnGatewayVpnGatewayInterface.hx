@@ -6,8 +6,7 @@ typedef VpnGatewayVpnGatewayInterface = {
 	@:optional
 	var id : Int;
 	/**
-		URL of the VLAN attachment (interconnectAttachment) resource for this VPN gateway interface. When the value of this field is present, the VPN gateway is used for IPsec-encrypted Cloud Interconnect; all egress or ingress traffic for this VPN gateway interface goes through the specified VLAN attachment resource.
-		Not currently available publicly.
+		URL of the VLAN attachment (interconnectAttachment) resource for this VPN gateway interface. When the value of this field is present, the VPN gateway is used for IPsec-encrypted Cloud Interconnect; all egress or ingress traffic for this VPN gateway interface goes through the specified VLAN attachment resource. Not currently available publicly. 
 	**/
 	@:optional
 	var interconnectAttachment : String;

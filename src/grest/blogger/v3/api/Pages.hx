@@ -4,7 +4,7 @@ interface Pages {
 		Deletes a page by blog id and page id.
 	**/
 	@:delete("/v3/blogs/$blogId/pages/$pageId")
-	function delete(blogId:String, pageId:String):Void;
+	function delete(blogId:String, pageId:String):tink.core.Noise;
 	/**
 		Gets a page by blog id and page id.
 	**/

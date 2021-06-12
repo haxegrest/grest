@@ -9,7 +9,7 @@ interface Labels {
 		Deletes a label and removes it from all accounts to which it was assigned.
 	**/
 	@:delete("/content/v2.1/accounts/$accountId/labels/$labelId")
-	function delete(accountId:String, labelId:String):Void;
+	function delete(accountId:String, labelId:String):tink.core.Noise;
 	/**
 		Lists the labels assigned to an account.
 	**/

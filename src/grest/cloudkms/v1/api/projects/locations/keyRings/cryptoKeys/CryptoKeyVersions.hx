@@ -34,7 +34,7 @@ interface CryptoKeyVersions {
 		Imports a new CryptoKeyVersion into an existing CryptoKey using the wrapped key material provided in the request. The version ID will be assigned the next sequential id within the CryptoKey.
 	**/
 	@:post("/v1/$parent/cryptoKeyVersions:import")
-	function import(parent:String, body:grest.cloudkms.v1.types.ImportCryptoKeyVersionRequest):grest.cloudkms.v1.types.CryptoKeyVersion;
+	function import_(parent:String, body:grest.cloudkms.v1.types.ImportCryptoKeyVersionRequest):grest.cloudkms.v1.types.CryptoKeyVersion;
 	/**
 		Lists CryptoKeyVersions.
 	**/

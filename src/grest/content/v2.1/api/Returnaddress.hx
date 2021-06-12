@@ -9,7 +9,7 @@ interface Returnaddress {
 		Deletes a return address for the given Merchant Center account.
 	**/
 	@:delete("/content/v2.1/$merchantId/returnaddress/$returnAddressId")
-	function delete(merchantId:String, returnAddressId:String):Void;
+	function delete(merchantId:String, returnAddressId:String):tink.core.Noise;
 	/**
 		Gets a return address of the Merchant Center account.
 	**/

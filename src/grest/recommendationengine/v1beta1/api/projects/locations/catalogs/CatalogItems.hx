@@ -19,7 +19,7 @@ interface CatalogItems {
 		Bulk import of multiple catalog items. Request processing may be synchronous. No partial updating supported. Non-existing items will be created. Operation.response is of type ImportResponse. Note that it is possible for a subset of the items to be successfully updated.
 	**/
 	@:post("/v1beta1/$parent/catalogItems:import")
-	function import(parent:String, body:grest.recommendationengine.v1beta1.types.GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest):grest.recommendationengine.v1beta1.types.GoogleLongrunningOperation;
+	function import_(parent:String, body:grest.recommendationengine.v1beta1.types.GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest):grest.recommendationengine.v1beta1.types.GoogleLongrunningOperation;
 	/**
 		Gets a list of catalog items.
 	**/

@@ -4,7 +4,7 @@ interface Experiments {
 		Delete an experiment.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/profiles/$profileId/experiments/$experimentId")
-	function delete(accountId:String, webPropertyId:String, profileId:String, experimentId:String):Void;
+	function delete(accountId:String, webPropertyId:String, profileId:String, experimentId:String):tink.core.Noise;
 	/**
 		Returns an experiment to which the user has access.
 	**/

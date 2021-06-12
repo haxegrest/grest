@@ -21,9 +21,7 @@ typedef HealthCheckService = {
 	@:optional
 	var healthChecks : Array<String>;
 	/**
-		Optional. Policy for how the results from multiple health checks for the same endpoint are aggregated. Defaults to NO_AGGREGATION if unspecified.  
-		- NO_AGGREGATION. An EndpointHealth message is returned for each backend in the health check service. 
-		- AND. If any backend's health check reports UNHEALTHY, then UNHEALTHY is the HealthState of the entire health check service. If all backend's are healthy, the HealthState of the health check service is HEALTHY. .
+		Optional. Policy for how the results from multiple health checks for the same endpoint are aggregated. Defaults to NO_AGGREGATION if unspecified. - NO_AGGREGATION. An EndpointHealth message is returned for each backend in the health check service. - AND. If any backend's health check reports UNHEALTHY, then UNHEALTHY is the HealthState of the entire health check service. If all backend's are healthy, the HealthState of the health check service is HEALTHY. .
 	**/
 	@:optional
 	var healthStatusAggregationPolicy : grest.compute.v1.types.HealthCheckService_healthStatusAggregationPolicy;

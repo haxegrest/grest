@@ -20,7 +20,7 @@ interface HmacKeys {
 		The project to be billed for this request.
 	**/
 	@:optional
-	var userProject : String; }):Void;
+	var userProject : String; }):tink.core.Noise;
 	/**
 		Retrieves an HMAC key's metadata
 	**/

@@ -14,7 +14,7 @@ interface Locations {
 	**/
 	@:optional
 	var filter : String; /**
-		The maximum number of results to return. If not set, the service selects a default.
+		The maximum number of results to return. If not set, the service will select a default.
 	**/
 	@:optional
 	var pageSize : Int; /**

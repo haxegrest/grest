@@ -4,7 +4,7 @@ interface Devices {
 		Uploads a report containing any changes in app states on the device since the last report was generated. You can call this method up to 3 times every 24 hours for a given device. If you exceed the quota, then the Google Play EMM API returns HTTP 429 Too Many Requests.
 	**/
 	@:post("/androidenterprise/v1/enterprises/$enterpriseId/users/$userId/devices/$deviceId/forceReportUpload")
-	function forceReportUpload(enterpriseId:String, userId:String, deviceId:String):Void;
+	function forceReportUpload(enterpriseId:String, userId:String, deviceId:String):tink.core.Noise;
 	/**
 		Retrieves the details of a device.
 	**/

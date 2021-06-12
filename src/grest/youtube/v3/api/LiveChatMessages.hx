@@ -4,7 +4,7 @@ interface LiveChatMessages {
 		Deletes a chat message.
 	**/
 	@:delete("/youtube/v3/liveChat/messages")
-	function delete(query:{ var id : String; }):Void;
+	function delete(query:{ var id : String; }):tink.core.Noise;
 	/**
 		Inserts a new resource into this collection.
 	**/

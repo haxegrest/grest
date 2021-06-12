@@ -9,7 +9,7 @@ interface Pos {
 		Deletes a store for the given merchant.
 	**/
 	@:delete("/content/v2.1/$merchantId/pos/$targetMerchantId/store/$storeCode")
-	function delete(merchantId:String, targetMerchantId:String, storeCode:String):Void;
+	function delete(merchantId:String, targetMerchantId:String, storeCode:String):tink.core.Noise;
 	/**
 		Retrieves information about the given store.
 	**/

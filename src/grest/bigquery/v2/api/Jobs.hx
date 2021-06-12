@@ -17,7 +17,7 @@ interface Jobs {
 		The geographic location of the job. Required. See details at: https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
 	**/
 	@:optional
-	var location : String; }):Void;
+	var location : String; }):tink.core.Noise;
 	/**
 		Returns information about a specific job. Job information is available for a six month period after creation. Requires that you're the person who ran the job, or have the Is Owner project role.
 	**/

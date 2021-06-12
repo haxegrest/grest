@@ -73,7 +73,9 @@ typedef Event = {
 		Extended properties of the event.
 	**/
 	@:optional
-	var extendedProperties : { var private : haxe.DynamicAccess<String>; var shared : haxe.DynamicAccess<String>; };
+	var extendedProperties : { @:formField("private")
+	@:json("private")
+	var private_ : haxe.DynamicAccess<String>; var shared : haxe.DynamicAccess<String>; };
 	/**
 		A gadget that extends this event. Gadgets are deprecated; this structure is instead only used for returning birthday calendar metadata.
 	**/

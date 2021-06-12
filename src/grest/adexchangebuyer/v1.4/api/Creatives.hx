@@ -4,7 +4,7 @@ interface Creatives {
 		Add a deal id association for the creative.
 	**/
 	@:post("/adexchangebuyer/v1.4/creatives/$accountId/$buyerCreativeId/addDeal/$dealId")
-	function addDeal(accountId:String, buyerCreativeId:String, dealId:String):Void;
+	function addDeal(accountId:String, buyerCreativeId:String, dealId:String):tink.core.Noise;
 	/**
 		Gets the status for a single creative. A creative will be available 30-40 minutes after submission.
 	**/
@@ -53,5 +53,5 @@ interface Creatives {
 		Remove a deal id associated with the creative.
 	**/
 	@:post("/adexchangebuyer/v1.4/creatives/$accountId/$buyerCreativeId/removeDeal/$dealId")
-	function removeDeal(accountId:String, buyerCreativeId:String, dealId:String):Void;
+	function removeDeal(accountId:String, buyerCreativeId:String, dealId:String):tink.core.Noise;
 }

@@ -4,7 +4,7 @@ interface FloodlightActivities {
 		Deletes an existing floodlight activity.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/floodlightActivities/$id")
-	function delete(profileId:String, id:String):Void;
+	function delete(profileId:String, id:String):tink.core.Noise;
 	/**
 		Generates a tag for a floodlight activity.
 	**/

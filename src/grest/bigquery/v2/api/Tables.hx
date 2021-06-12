@@ -4,7 +4,7 @@ interface Tables {
 		Deletes the table specified by tableId from the dataset. If the table contains data, all the data will be deleted.
 	**/
 	@:delete("/bigquery/v2/projects/$projectId/datasets/$datasetId/tables/$tableId")
-	function delete(projectId:String, datasetId:String, tableId:String):Void;
+	function delete(projectId:String, datasetId:String, tableId:String):tink.core.Noise;
 	/**
 		Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table.
 	**/

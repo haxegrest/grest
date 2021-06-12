@@ -39,7 +39,7 @@ interface Instances {
 		Imports data into a Cloud SQL instance from a SQL dump or CSV file in Cloud Storage.
 	**/
 	@:post("/sql/v1beta4/projects/$project/instances/$instance/import")
-	function import(project:String, instance:String, body:grest.sqladmin.v1beta4.types.InstancesImportRequest):grest.sqladmin.v1beta4.types.Operation;
+	function import_(project:String, instance:String, body:grest.sqladmin.v1beta4.types.InstancesImportRequest):grest.sqladmin.v1beta4.types.Operation;
 	/**
 		Creates a new Cloud SQL instance.
 	**/

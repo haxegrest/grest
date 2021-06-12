@@ -13,7 +13,7 @@ interface Regions {
 		Deletes a region definition from your Merchant Center account.
 	**/
 	@:delete("/content/v2.1/$merchantId/regions/$regionId")
-	function delete(merchantId:String, regionId:String):Void;
+	function delete(merchantId:String, regionId:String):tink.core.Noise;
 	/**
 		Retrieves a region defined in your Merchant Center account.
 	**/

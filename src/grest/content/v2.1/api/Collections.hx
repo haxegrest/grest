@@ -9,7 +9,7 @@ interface Collections {
 		Deletes a collection from your Merchant Center account.
 	**/
 	@:delete("/content/v2.1/$merchantId/collections/$collectionId")
-	function delete(merchantId:String, collectionId:String):Void;
+	function delete(merchantId:String, collectionId:String):tink.core.Noise;
 	/**
 		Retrieves a collection from your Merchant Center account.
 	**/

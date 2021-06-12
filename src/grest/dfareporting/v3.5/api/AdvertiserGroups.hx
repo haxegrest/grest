@@ -4,7 +4,7 @@ interface AdvertiserGroups {
 		Deletes an existing advertiser group.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/advertiserGroups/$id")
-	function delete(profileId:String, id:String):Void;
+	function delete(profileId:String, id:String):tink.core.Noise;
 	/**
 		Gets one advertiser group by ID.
 	**/

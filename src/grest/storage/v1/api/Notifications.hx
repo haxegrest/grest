@@ -12,7 +12,7 @@ interface Notifications {
 		The project to be billed for this request. Required for Requester Pays buckets.
 	**/
 	@:optional
-	var userProject : String; }):Void;
+	var userProject : String; }):tink.core.Noise;
 	/**
 		View a notification configuration.
 	**/

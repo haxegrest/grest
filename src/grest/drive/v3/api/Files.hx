@@ -86,7 +86,7 @@ interface Files {
 		Deprecated use supportsAllDrives instead.
 	**/
 	@:optional
-	var supportsTeamDrives : Bool; }):Void;
+	var supportsTeamDrives : Bool; }):tink.core.Noise;
 	/**
 		Permanently deletes all of the user's trashed files.
 	**/
@@ -95,7 +95,7 @@ interface Files {
 		Deprecated. If an item is not in a shared drive and its last parent is deleted but the item itself is not, the item will be placed under its owner's root.
 	**/
 	@:optional
-	var enforceSingleParent : Bool; }):Void;
+	var enforceSingleParent : Bool; }):tink.core.Noise;
 	/**
 		Exports a Google Doc to the requested MIME type and returns the exported content. Please note that the exported content is limited to 10MB.
 	**/
@@ -103,7 +103,7 @@ interface Files {
 	function export(fileId:String, query:{ /**
 		The MIME type of the format requested for this export.
 	**/
-	var mimeType : String; }):Void;
+	var mimeType : String; }):tink.core.Noise;
 	/**
 		Generates a set of file IDs which can be provided in create or copy requests.
 	**/

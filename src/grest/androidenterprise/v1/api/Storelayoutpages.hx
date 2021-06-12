@@ -4,7 +4,7 @@ interface Storelayoutpages {
 		Deletes a store page.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/storeLayout/pages/$pageId")
-	function delete(enterpriseId:String, pageId:String):Void;
+	function delete(enterpriseId:String, pageId:String):tink.core.Noise;
 	/**
 		Retrieves details of a store page.
 	**/

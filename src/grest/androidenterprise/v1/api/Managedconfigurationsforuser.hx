@@ -4,7 +4,7 @@ interface Managedconfigurationsforuser {
 		Removes a per-user managed configuration for an app for the specified user.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/users/$userId/managedConfigurationsForUser/$managedConfigurationForUserId")
-	function delete(enterpriseId:String, userId:String, managedConfigurationForUserId:String):Void;
+	function delete(enterpriseId:String, userId:String, managedConfigurationForUserId:String):tink.core.Noise;
 	/**
 		Retrieves details of a per-user managed configuration for an app for the specified user.
 	**/

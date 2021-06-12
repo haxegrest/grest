@@ -21,7 +21,7 @@ interface UserEvents {
 		Bulk import of User events. Request processing might be synchronous. Events that already exist are skipped. Use this method for backfilling historical user events. Operation.response is of type ImportResponse. Note that it is possible for a subset of the items to be successfully inserted. Operation.metadata is of type ImportMetadata.
 	**/
 	@:post("/v1beta1/$parent/userEvents:import")
-	function import(parent:String, body:grest.recommendationengine.v1beta1.types.GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest):grest.recommendationengine.v1beta1.types.GoogleLongrunningOperation;
+	function import_(parent:String, body:grest.recommendationengine.v1beta1.types.GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest):grest.recommendationengine.v1beta1.types.GoogleLongrunningOperation;
 	/**
 		Gets a list of user events within a time range, with potential filtering. The method does not list unjoined user events. Unjoined user event definition: when a user event is ingested from Recommendations AI User Event APIs, the catalog item included in the user event is connected with the current catalog. If a catalog item of the ingested event is not in the current catalog, it could lead to degraded model quality. This is called an unjoined event.
 	**/

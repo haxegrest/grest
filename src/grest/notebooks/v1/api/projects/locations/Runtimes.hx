@@ -51,5 +51,5 @@ interface Runtimes {
 		Switch a Managed Notebook Runtime.
 	**/
 	@:post("/v1/$name")
-	function switch(name:grest.notebooks.v1.types.Api_notebooks_projects_locations_runtimes_switch_name_Command, body:grest.notebooks.v1.types.SwitchRuntimeRequest):grest.notebooks.v1.types.Operation;
+	function switch_(name:grest.notebooks.v1.types.Api_notebooks_projects_locations_runtimes_switch_name_Command, body:grest.notebooks.v1.types.SwitchRuntimeRequest):grest.notebooks.v1.types.Operation;
 }

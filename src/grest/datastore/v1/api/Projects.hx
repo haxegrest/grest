@@ -24,7 +24,7 @@ interface Projects {
 		Imports entities into Google Cloud Datastore. Existing entities with the same key are overwritten. The import occurs in the background and its progress can be monitored and managed via the Operation resource that is created. If an ImportEntities operation is cancelled, it is possible that a subset of the data has already been imported to Cloud Datastore.
 	**/
 	@:post("/v1/projects/$projectId")
-	function import(projectId:grest.datastore.v1.types.Api_datastore_projects_import_projectId_Command, body:grest.datastore.v1.types.GoogleDatastoreAdminV1ImportEntitiesRequest):grest.datastore.v1.types.GoogleLongrunningOperation;
+	function import_(projectId:grest.datastore.v1.types.Api_datastore_projects_import_projectId_Command, body:grest.datastore.v1.types.GoogleDatastoreAdminV1ImportEntitiesRequest):grest.datastore.v1.types.GoogleLongrunningOperation;
 	@:sub("/")
 	var indexes : grest.datastore.v1.api.projects.Indexes;
 	/**

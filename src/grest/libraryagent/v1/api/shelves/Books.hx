@@ -27,5 +27,5 @@ interface Books {
 		Return a book to the library. Returns the book if it is returned to the library successfully. Returns error if the book does not belong to the library or the users didn't borrow before.
 	**/
 	@:post("/v1/$name")
-	function return(name:grest.libraryagent.v1.types.Api_libraryagent_shelves_books_return_name_Command):grest.libraryagent.v1.types.GoogleExampleLibraryagentV1Book;
+	function return_(name:grest.libraryagent.v1.types.Api_libraryagent_shelves_books_return_name_Command):grest.libraryagent.v1.types.GoogleExampleLibraryagentV1Book;
 }

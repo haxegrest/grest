@@ -4,7 +4,7 @@ interface CalendarList {
 		Removes a calendar from the user's calendar list.
 	**/
 	@:delete("/calendar/v3/users/me/calendarList/$calendarId")
-	function delete(calendarId:String):Void;
+	function delete(calendarId:String):tink.core.Noise;
 	/**
 		Returns a calendar from the user's calendar list.
 	**/

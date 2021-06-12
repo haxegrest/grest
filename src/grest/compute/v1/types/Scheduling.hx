@@ -1,9 +1,7 @@
 package grest.compute.v1.types;
 typedef Scheduling = {
 	/**
-		Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user). You can only set the automatic restart option for standard instances. Preemptible instances cannot be automatically restarted.
-		
-		By default, this is set to true so an instance is automatically restarted if it is terminated by Compute Engine.
+		Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user). You can only set the automatic restart option for standard instances. Preemptible instances cannot be automatically restarted. By default, this is set to true so an instance is automatically restarted if it is terminated by Compute Engine.
 	**/
 	@:optional
 	var automaticRestart : Bool;

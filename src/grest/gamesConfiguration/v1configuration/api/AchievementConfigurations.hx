@@ -4,7 +4,7 @@ interface AchievementConfigurations {
 		Delete the achievement configuration with the given ID.
 	**/
 	@:delete("/games/v1configuration/achievements/$achievementId")
-	function delete(achievementId:String):Void;
+	function delete(achievementId:String):tink.core.Noise;
 	/**
 		Retrieves the metadata of the achievement configuration with the given ID.
 	**/

@@ -9,7 +9,7 @@ interface Drafts {
 		Immediately and permanently deletes the specified draft. Does not simply trash it.
 	**/
 	@:delete("/gmail/v1/users/$userId/drafts/$id")
-	function delete(userId:String, id:String):Void;
+	function delete(userId:String, id:String):tink.core.Noise;
 	/**
 		Gets the specified draft.
 	**/

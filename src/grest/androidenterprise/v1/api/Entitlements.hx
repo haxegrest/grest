@@ -4,7 +4,7 @@ interface Entitlements {
 		Removes an entitlement to an app for a user.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/users/$userId/entitlements/$entitlementId")
-	function delete(enterpriseId:String, userId:String, entitlementId:String):Void;
+	function delete(enterpriseId:String, userId:String, entitlementId:String):tink.core.Noise;
 	/**
 		Retrieves details of an entitlement.
 	**/

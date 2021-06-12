@@ -17,7 +17,7 @@ interface Policies {
 		For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection.
 	**/
 	@:optional
-	var clientOperationId : String; }):Void;
+	var clientOperationId : String; }):tink.core.Noise;
 	/**
 		Fetches the representation of an existing Policy.
 	**/

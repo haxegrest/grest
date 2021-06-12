@@ -6,8 +6,7 @@ typedef Reference = {
 	@:optional
 	var kind : String;
 	/**
-		A description of the reference type with no implied semantics. Possible values include:  
-		- MEMBER_OF
+		A description of the reference type with no implied semantics. Possible values include: 1. MEMBER_OF 
 	**/
 	@:optional
 	var referenceType : String;

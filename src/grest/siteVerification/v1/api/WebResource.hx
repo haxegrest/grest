@@ -4,7 +4,7 @@ interface WebResource {
 		Relinquish ownership of a website or domain.
 	**/
 	@:delete("/siteVerification/v1/webResource/$id")
-	function delete(id:String):Void;
+	function delete(id:String):tink.core.Noise;
 	/**
 		Get the most current data for a website or domain.
 	**/

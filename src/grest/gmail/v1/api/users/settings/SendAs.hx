@@ -9,7 +9,7 @@ interface SendAs {
 		Deletes the specified send-as alias. Revokes any verification that may have been required for using it. This method is only available to service account clients that have been delegated domain-wide authority.
 	**/
 	@:delete("/gmail/v1/users/$userId/settings/sendAs/$sendAsEmail")
-	function delete(userId:String, sendAsEmail:String):Void;
+	function delete(userId:String, sendAsEmail:String):tink.core.Noise;
 	/**
 		Gets the specified send-as alias. Fails with an HTTP 404 error if the specified address is not a member of the collection.
 	**/
@@ -36,5 +36,5 @@ interface SendAs {
 		Sends a verification email to the specified send-as alias address. The verification status must be `pending`. This method is only available to service account clients that have been delegated domain-wide authority.
 	**/
 	@:post("/gmail/v1/users/$userId/settings/sendAs/$sendAsEmail/verify")
-	function verify(userId:String, sendAsEmail:String):Void;
+	function verify(userId:String, sendAsEmail:String):tink.core.Noise;
 }

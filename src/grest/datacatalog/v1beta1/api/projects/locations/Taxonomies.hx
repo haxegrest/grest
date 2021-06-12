@@ -37,7 +37,7 @@ interface Taxonomies {
 		Imports all taxonomies and their policy tags to a project as new taxonomies. This method provides a bulk taxonomy / policy tag creation using nested proto structure.
 	**/
 	@:post("/v1beta1/$parent/taxonomies:import")
-	function import(parent:String, body:grest.datacatalog.v1beta1.types.GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest):grest.datacatalog.v1beta1.types.GoogleCloudDatacatalogV1beta1ImportTaxonomiesResponse;
+	function import_(parent:String, body:grest.datacatalog.v1beta1.types.GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest):grest.datacatalog.v1beta1.types.GoogleCloudDatacatalogV1beta1ImportTaxonomiesResponse;
 	/**
 		Lists all taxonomies in a project in a particular location that the caller has permission to view.
 	**/

@@ -4,7 +4,7 @@ interface Installs {
 		Requests to remove an app from a device. A call to get or list will still show the app as installed on the device until it is actually removed.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/users/$userId/devices/$deviceId/installs/$installId")
-	function delete(enterpriseId:String, userId:String, deviceId:String, installId:String):Void;
+	function delete(enterpriseId:String, userId:String, deviceId:String, installId:String):tink.core.Noise;
 	/**
 		Retrieves details of an installation of an app on a device.
 	**/

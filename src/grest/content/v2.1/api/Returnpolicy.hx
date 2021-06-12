@@ -9,7 +9,7 @@ interface Returnpolicy {
 		Deletes a return policy for the given Merchant Center account.
 	**/
 	@:delete("/content/v2.1/$merchantId/returnpolicy/$returnPolicyId")
-	function delete(merchantId:String, returnPolicyId:String):Void;
+	function delete(merchantId:String, returnPolicyId:String):tink.core.Noise;
 	/**
 		Gets a return policy of the Merchant Center account.
 	**/

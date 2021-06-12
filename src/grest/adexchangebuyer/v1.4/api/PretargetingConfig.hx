@@ -4,7 +4,7 @@ interface PretargetingConfig {
 		Deletes an existing pretargeting config.
 	**/
 	@:delete("/adexchangebuyer/v1.4/pretargetingconfigs/$accountId/$configId")
-	function delete(accountId:String, configId:String):Void;
+	function delete(accountId:String, configId:String):tink.core.Noise;
 	/**
 		Gets a specific pretargeting configuration
 	**/

@@ -4,7 +4,7 @@ interface LiveChatBans {
 		Deletes a chat ban.
 	**/
 	@:delete("/youtube/v3/liveChat/bans")
-	function delete(query:{ var id : String; }):Void;
+	function delete(query:{ var id : String; }):tink.core.Noise;
 	/**
 		Inserts a new resource into this collection.
 	**/

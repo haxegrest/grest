@@ -4,7 +4,7 @@ interface AccountUserLinks {
 		Removes a user from the given account.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/entityUserLinks/$linkId")
-	function delete(accountId:String, linkId:String):Void;
+	function delete(accountId:String, linkId:String):tink.core.Noise;
 	/**
 		Adds a new user to the given account.
 	**/

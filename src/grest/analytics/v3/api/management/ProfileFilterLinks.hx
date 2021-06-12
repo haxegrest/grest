@@ -4,7 +4,7 @@ interface ProfileFilterLinks {
 		Delete a profile filter link.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/profiles/$profileId/profileFilterLinks/$linkId")
-	function delete(accountId:String, webPropertyId:String, profileId:String, linkId:String):Void;
+	function delete(accountId:String, webPropertyId:String, profileId:String, linkId:String):tink.core.Noise;
 	/**
 		Returns a single profile filter link.
 	**/

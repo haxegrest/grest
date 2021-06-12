@@ -19,7 +19,7 @@ interface Users {
 		Stop receiving push notifications for the given user mailbox.
 	**/
 	@:post("/gmail/v1/users/$userId/stop")
-	function stop(userId:String):Void;
+	function stop(userId:String):tink.core.Noise;
 	@:sub("/")
 	var threads : grest.gmail.v1.api.users.Threads;
 	/**

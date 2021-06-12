@@ -14,15 +14,15 @@ interface Scores {
 		Resets scores for all draft leaderboards for all players. This method is only available to user accounts for your developer console.
 	**/
 	@:post("/games/v1management/scores/resetAllForAllPlayers")
-	function resetAllForAllPlayers():Void;
+	function resetAllForAllPlayers():tink.core.Noise;
 	/**
 		Resets scores for the leaderboard with the given ID for all players. This method is only available to user accounts for your developer console. Only draft leaderboards can be reset.
 	**/
 	@:post("/games/v1management/leaderboards/$leaderboardId/scores/resetForAllPlayers")
-	function resetForAllPlayers(leaderboardId:String):Void;
+	function resetForAllPlayers(leaderboardId:String):tink.core.Noise;
 	/**
 		Resets scores for the leaderboards with the given IDs for all players. This method is only available to user accounts for your developer console. Only draft leaderboards may be reset.
 	**/
 	@:post("/games/v1management/scores/resetMultipleForAllPlayers")
-	function resetMultipleForAllPlayers(body:grest.gamesManagement.v1management.types.ScoresResetMultipleForAllRequest):Void;
+	function resetMultipleForAllPlayers(body:grest.gamesManagement.v1management.types.ScoresResetMultipleForAllRequest):tink.core.Noise;
 }

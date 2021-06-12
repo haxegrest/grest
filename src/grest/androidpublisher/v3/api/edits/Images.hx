@@ -4,7 +4,7 @@ interface Images {
 		Deletes the image (specified by id) from the edit.
 	**/
 	@:delete("/androidpublisher/v3/applications/$packageName/edits/$editId/listings/$language/$imageType/$imageId")
-	function delete(packageName:String, editId:String, language:String, imageType:String, imageId:String):Void;
+	function delete(packageName:String, editId:String, language:String, imageType:String, imageId:String):tink.core.Noise;
 	/**
 		Deletes all images for the specified language and image type. Returns an empty response if no images are found.
 	**/

@@ -13,7 +13,7 @@ typedef ExternalVpnGatewayList = {
 	@:optional
 	var items : Array<ExternalVpnGateway>;
 	/**
-		[Output Only] Type of resource. Always compute#externalVpnGatewayList  for lists of externalVpnGateways.
+		[Output Only] Type of resource. Always compute#externalVpnGatewayList for lists of externalVpnGateways.
 	**/
 	@:optional
 	var kind : String;

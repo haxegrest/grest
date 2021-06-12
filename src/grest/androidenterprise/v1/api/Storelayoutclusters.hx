@@ -4,7 +4,7 @@ interface Storelayoutclusters {
 		Deletes a cluster.
 	**/
 	@:delete("/androidenterprise/v1/enterprises/$enterpriseId/storeLayout/pages/$pageId/clusters/$clusterId")
-	function delete(enterpriseId:String, pageId:String, clusterId:String):Void;
+	function delete(enterpriseId:String, pageId:String, clusterId:String):tink.core.Noise;
 	/**
 		Retrieves details of a cluster.
 	**/

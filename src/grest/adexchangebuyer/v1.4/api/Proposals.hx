@@ -28,7 +28,7 @@ interface Proposals {
 		Update the given proposal to indicate that setup has been completed.
 	**/
 	@:post("/adexchangebuyer/v1.4/proposals/$proposalId/setupcomplete")
-	function setupcomplete(proposalId:String):Void;
+	function setupcomplete(proposalId:String):tink.core.Noise;
 	/**
 		Update the given proposal
 	**/

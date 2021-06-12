@@ -4,7 +4,7 @@ interface Inappproducts {
 		Deletes an in-app product (i.e. a managed product or a subscriptions).
 	**/
 	@:delete("/androidpublisher/v3/applications/$packageName/inappproducts/$sku")
-	function delete(packageName:String, sku:String):Void;
+	function delete(packageName:String, sku:String):tink.core.Noise;
 	/**
 		Gets an in-app product, which can be a managed product or a subscription.
 	**/

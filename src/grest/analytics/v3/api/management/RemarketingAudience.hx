@@ -4,7 +4,7 @@ interface RemarketingAudience {
 		Delete a remarketing audience.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/remarketingAudiences/$remarketingAudienceId")
-	function delete(accountId:String, webPropertyId:String, remarketingAudienceId:String):Void;
+	function delete(accountId:String, webPropertyId:String, remarketingAudienceId:String):tink.core.Noise;
 	/**
 		Gets a remarketing audience to which the user has access.
 	**/

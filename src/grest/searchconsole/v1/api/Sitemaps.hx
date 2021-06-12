@@ -4,7 +4,7 @@ interface Sitemaps {
 		Deletes a sitemap from this site.
 	**/
 	@:delete("/webmasters/v3/sites/$siteUrl/sitemaps/$feedpath")
-	function delete(siteUrl:String, feedpath:String):Void;
+	function delete(siteUrl:String, feedpath:String):tink.core.Noise;
 	/**
 		Retrieves information about a specific sitemap.
 	**/
@@ -23,5 +23,5 @@ interface Sitemaps {
 		Submits a sitemap for a site.
 	**/
 	@:put("/webmasters/v3/sites/$siteUrl/sitemaps/$feedpath")
-	function submit(siteUrl:String, feedpath:String):Void;
+	function submit(siteUrl:String, feedpath:String):tink.core.Noise;
 }

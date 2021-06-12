@@ -14,15 +14,15 @@ interface Achievements {
 		Resets all draft achievements for all players. This method is only available to user accounts for your developer console.
 	**/
 	@:post("/games/v1management/achievements/resetAllForAllPlayers")
-	function resetAllForAllPlayers():Void;
+	function resetAllForAllPlayers():tink.core.Noise;
 	/**
 		Resets the achievement with the given ID for all players. This method is only available to user accounts for your developer console. Only draft achievements can be reset.
 	**/
 	@:post("/games/v1management/achievements/$achievementId/resetForAllPlayers")
-	function resetForAllPlayers(achievementId:String):Void;
+	function resetForAllPlayers(achievementId:String):tink.core.Noise;
 	/**
 		Resets achievements with the given IDs for all players. This method is only available to user accounts for your developer console. Only draft achievements may be reset.
 	**/
 	@:post("/games/v1management/achievements/resetMultipleForAllPlayers")
-	function resetMultipleForAllPlayers(body:grest.gamesManagement.v1management.types.AchievementResetMultipleForAllRequest):Void;
+	function resetMultipleForAllPlayers(body:grest.gamesManagement.v1management.types.AchievementResetMultipleForAllRequest):tink.core.Noise;
 }

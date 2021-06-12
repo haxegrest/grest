@@ -42,7 +42,7 @@ interface DicomStores {
 		Imports data into the DICOM store by copying it from the specified source. Errors are logged to Cloud Logging. For more information, see [Viewing error logs in Cloud Logging](https://cloud.google.com/healthcare/docs/how-tos/logging). The metadata field type is OperationMetadata.
 	**/
 	@:post("/v1/$name")
-	function import(name:grest.healthcare.v1.types.Api_healthcare_projects_locations_datasets_dicomStores_import_name_Command, body:grest.healthcare.v1.types.ImportDicomDataRequest):grest.healthcare.v1.types.Operation;
+	function import_(name:grest.healthcare.v1.types.Api_healthcare_projects_locations_datasets_dicomStores_import_name_Command, body:grest.healthcare.v1.types.ImportDicomDataRequest):grest.healthcare.v1.types.Operation;
 	/**
 		Lists the DICOM stores in the given dataset.
 	**/

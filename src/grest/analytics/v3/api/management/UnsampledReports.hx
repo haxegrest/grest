@@ -4,7 +4,7 @@ interface UnsampledReports {
 		Deletes an unsampled report.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/profiles/$profileId/unsampledReports/$unsampledReportId")
-	function delete(accountId:String, webPropertyId:String, profileId:String, unsampledReportId:String):Void;
+	function delete(accountId:String, webPropertyId:String, profileId:String, unsampledReportId:String):tink.core.Noise;
 	/**
 		Returns a single unsampled report.
 	**/

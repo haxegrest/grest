@@ -26,7 +26,7 @@ typedef AutoscalerAggregatedList = {
 	@:optional
 	var selfLink : String;
 	/**
-		[Output Only] Unreachable resources.
+		[Output Only] Unreachable resources. end_interface: MixerListResponseWithEtagBuilder
 	**/
 	@:optional
 	var unreachables : Array<String>;

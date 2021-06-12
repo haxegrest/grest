@@ -4,7 +4,7 @@ interface EventTags {
 		Deletes an existing event tag.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/eventTags/$id")
-	function delete(profileId:String, id:String):Void;
+	function delete(profileId:String, id:String):tink.core.Noise;
 	/**
 		Gets one event tag by ID.
 	**/

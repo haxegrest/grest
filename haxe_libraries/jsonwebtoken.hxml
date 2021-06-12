@@ -1,0 +1,5 @@
+# @install: lix --silent download "gh://github.com/kevinresol/jsonwebtoken#b90ce4b0755785629768538d83ad62a539a59b76" into jsonwebtoken/2.0.3/github/b90ce4b0755785629768538d83ad62a539a59b76
+-lib crypto
+-lib tink_core
+-cp ${HAXE_LIBCACHE}/jsonwebtoken/2.0.3/github/b90ce4b0755785629768538d83ad62a539a59b76/src
+-D jsonwebtoken=2.0.3

@@ -23,7 +23,7 @@ interface Products {
 		Bulk import of multiple Products. Request processing may be synchronous. No partial updating is supported. Non-existing items are created. Note that it is possible for a subset of the Products to be successfully updated.
 	**/
 	@:post("/v2/$parent/products:import")
-	function import(parent:String, body:grest.retail.v2.types.GoogleCloudRetailV2ImportProductsRequest):grest.retail.v2.types.GoogleLongrunningOperation;
+	function import_(parent:String, body:grest.retail.v2.types.GoogleCloudRetailV2ImportProductsRequest):grest.retail.v2.types.GoogleLongrunningOperation;
 	/**
 		Updates a Product.
 	**/

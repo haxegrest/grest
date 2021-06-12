@@ -4,7 +4,7 @@ interface WebPropertyAdWordsLinks {
 		Deletes a web property-Google Ads link.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/entityAdWordsLinks/$webPropertyAdWordsLinkId")
-	function delete(accountId:String, webPropertyId:String, webPropertyAdWordsLinkId:String):Void;
+	function delete(accountId:String, webPropertyId:String, webPropertyAdWordsLinkId:String):tink.core.Noise;
 	/**
 		Returns a web property-Google Ads link to which the user has access.
 	**/

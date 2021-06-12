@@ -4,5 +4,5 @@ interface Channels {
 		Stop watching resources through this channel
 	**/
 	@:post("/calendar/v3/channels/stop")
-	function stop(body:grest.calendar.v3.types.Channel):Void;
+	function stop(body:grest.calendar.v3.types.Channel):tink.core.Noise;
 }

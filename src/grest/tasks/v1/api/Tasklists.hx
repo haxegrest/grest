@@ -4,7 +4,7 @@ interface Tasklists {
 		Deletes the authenticated user's specified task list.
 	**/
 	@:delete("/tasks/v1/users/@me/lists/$tasklist")
-	function delete(tasklist:String):Void;
+	function delete(tasklist:String):tink.core.Noise;
 	/**
 		Returns the authenticated user's specified task list.
 	**/

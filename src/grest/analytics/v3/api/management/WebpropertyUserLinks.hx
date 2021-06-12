@@ -4,7 +4,7 @@ interface WebpropertyUserLinks {
 		Removes a user from the given web property.
 	**/
 	@:delete("/analytics/v3/management/accounts/$accountId/webproperties/$webPropertyId/entityUserLinks/$linkId")
-	function delete(accountId:String, webPropertyId:String, linkId:String):Void;
+	function delete(accountId:String, webPropertyId:String, linkId:String):tink.core.Noise;
 	/**
 		Adds a new user to the given web property.
 	**/

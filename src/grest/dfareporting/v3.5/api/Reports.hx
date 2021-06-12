@@ -6,7 +6,7 @@ interface Reports {
 		Deletes a report by its ID.
 	**/
 	@:delete("/dfareporting/v3.5/userprofiles/$profileId/reports/$reportId")
-	function delete(profileId:String, reportId:String):Void;
+	function delete(profileId:String, reportId:String):tink.core.Noise;
 	@:sub("/")
 	var files : grest.dfareporting.v3.5.api.reports.Files;
 	/**

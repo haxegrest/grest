@@ -13,6 +13,7 @@
   "releasenote": "initial release",
   "version": "0.0.0",
   "dependencies": {
+    "grest_core": "",
     "tink_web": ""
   }
 }

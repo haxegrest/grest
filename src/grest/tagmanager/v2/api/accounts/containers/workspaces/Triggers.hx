@@ -9,7 +9,7 @@ interface Triggers {
 		Deletes a GTM Trigger.
 	**/
 	@:delete("/tagmanager/v2/$path")
-	function delete(path:String):Void;
+	function delete(path:String):tink.core.Noise;
 	/**
 		Gets a GTM Trigger.
 	**/

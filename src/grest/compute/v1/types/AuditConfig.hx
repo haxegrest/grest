@@ -5,6 +5,9 @@ typedef AuditConfig = {
 	**/
 	@:optional
 	var auditLogConfigs : Array<AuditLogConfig>;
+	/**
+		This is deprecated and has no effect. Do not use.
+	**/
 	@:optional
 	var exemptedMembers : Array<String>;
 	/**

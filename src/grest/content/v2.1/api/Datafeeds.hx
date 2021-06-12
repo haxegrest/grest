@@ -9,7 +9,7 @@ interface Datafeeds {
 		Deletes a datafeed configuration from your Merchant Center account.
 	**/
 	@:delete("/content/v2.1/$merchantId/datafeeds/$datafeedId")
-	function delete(merchantId:String, datafeedId:String):Void;
+	function delete(merchantId:String, datafeedId:String):tink.core.Noise;
 	/**
 		Invokes a fetch for the datafeed in your Merchant Center account. If you need to call this method more than once per day, we recommend you use the Products service to update your product data.
 	**/

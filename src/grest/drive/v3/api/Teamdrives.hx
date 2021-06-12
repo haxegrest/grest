@@ -12,7 +12,7 @@ interface Teamdrives {
 		Deprecated use drives.delete instead.
 	**/
 	@:delete("/drive/v3/teamdrives/$teamDriveId")
-	function delete(teamDriveId:String):Void;
+	function delete(teamDriveId:String):tink.core.Noise;
 	/**
 		Deprecated use drives.get instead.
 	**/

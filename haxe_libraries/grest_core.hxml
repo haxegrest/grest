@@ -1,0 +1,5 @@
+-lib tink_web
+-lib jsonwebtoken
+-cp ${SCOPE_DIR}/../grest_core/src
+-D grest_core=0.0.0
+--macro Sys.println("haxe_libraries/grest_core.hxml:4: [Warning] Using dev version of library grest_core")

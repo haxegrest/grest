@@ -21,7 +21,7 @@ interface UserEvents {
 		Bulk import of User events. Request processing might be synchronous. Events that already exist are skipped. Use this method for backfilling historical user events. Operation.response is of type ImportResponse. Note that it is possible for a subset of the items to be successfully inserted. Operation.metadata is of type ImportMetadata.
 	**/
 	@:post("/v2/$parent/userEvents:import")
-	function import(parent:String, body:grest.retail.v2.types.GoogleCloudRetailV2ImportUserEventsRequest):grest.retail.v2.types.GoogleLongrunningOperation;
+	function import_(parent:String, body:grest.retail.v2.types.GoogleCloudRetailV2ImportUserEventsRequest):grest.retail.v2.types.GoogleLongrunningOperation;
 	/**
 		Deletes permanently all user events specified by the filter provided. Depending on the number of events specified by the filter, this operation could take hours or days to complete. To test a filter, use the list command first.
 	**/

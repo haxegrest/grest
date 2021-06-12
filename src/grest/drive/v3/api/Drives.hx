@@ -12,7 +12,7 @@ interface Drives {
 		Permanently deletes a shared drive for which the user is an organizer. The shared drive cannot contain any untrashed items.
 	**/
 	@:delete("/drive/v3/drives/$driveId")
-	function delete(driveId:String):Void;
+	function delete(driveId:String):tink.core.Noise;
 	/**
 		Gets a shared drive's metadata by ID.
 	**/

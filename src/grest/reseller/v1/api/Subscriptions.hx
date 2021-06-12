@@ -27,7 +27,7 @@ interface Subscriptions {
 	function delete(customerId:String, subscriptionId:String, query:{ /**
 		The `deletionType` query string enables the cancellation, downgrade, or suspension of a subscription.
 	**/
-	var deletionType : grest.reseller.v1.types.Api_Subscriptions_delete_deletionType; }):Void;
+	var deletionType : grest.reseller.v1.types.Api_Subscriptions_delete_deletionType; }):tink.core.Noise;
 	/**
 		Get a specific subscription. The `subscriptionId` can be found using the [Retrieve all reseller subscriptions](/admin-sdk/reseller/v1/how-tos/manage_subscriptions#get_all_subscriptions) method. For more information about retrieving a specific subscription, see the information descrived in [manage subscriptions](/admin-sdk/reseller/v1/how-tos/manage_subscriptions#get_subscription).
 	**/

@@ -38,7 +38,7 @@ interface Instances {
 		Import a Redis RDB snapshot file from Cloud Storage into a Redis instance. Redis may stop serving during this operation. Instance state will be IMPORTING for entire operation. When complete, the instance will contain only data from the imported file. The returned operation is automatically deleted after a few hours, so there is no need to call DeleteOperation.
 	**/
 	@:post("/v1/$name")
-	function import(name:grest.redis.v1.types.Api_redis_projects_locations_instances_import_name_Command, body:grest.redis.v1.types.ImportInstanceRequest):grest.redis.v1.types.Operation;
+	function import_(name:grest.redis.v1.types.Api_redis_projects_locations_instances_import_name_Command, body:grest.redis.v1.types.ImportInstanceRequest):grest.redis.v1.types.Operation;
 	/**
 		Lists all Redis instances owned by a project in either the specified location (region) or all locations. The location should have the following format: * `projects/{project_id}/locations/{location_id}` If `location_id` is specified as `-` (wildcard), then all regions available to the project are queried, and the results are aggregated.
 	**/

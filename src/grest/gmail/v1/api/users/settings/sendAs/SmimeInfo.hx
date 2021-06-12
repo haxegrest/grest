@@ -4,7 +4,7 @@ interface SmimeInfo {
 		Deletes the specified S/MIME config for the specified send-as alias.
 	**/
 	@:delete("/gmail/v1/users/$userId/settings/sendAs/$sendAsEmail/smimeInfo/$id")
-	function delete(userId:String, sendAsEmail:String, id:String):Void;
+	function delete(userId:String, sendAsEmail:String, id:String):tink.core.Noise;
 	/**
 		Gets the specified S/MIME config for the specified send-as alias.
 	**/
@@ -24,5 +24,5 @@ interface SmimeInfo {
 		Sets the default S/MIME config for the specified send-as alias.
 	**/
 	@:post("/gmail/v1/users/$userId/settings/sendAs/$sendAsEmail/smimeInfo/$id/setDefault")
-	function setDefault(userId:String, sendAsEmail:String, id:String):Void;
+	function setDefault(userId:String, sendAsEmail:String, id:String):tink.core.Noise;
 }

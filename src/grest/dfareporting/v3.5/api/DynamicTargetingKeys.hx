@@ -10,7 +10,7 @@ interface DynamicTargetingKeys {
 	var name : String; /**
 		Type of the object of this dynamic targeting key. This is a required field.
 	**/
-	var objectType : grest.dfareporting.v3.5.types.Api_DynamicTargetingKeys_delete_objectType; }):Void;
+	var objectType : grest.dfareporting.v3.5.types.Api_DynamicTargetingKeys_delete_objectType; }):tink.core.Noise;
 	/**
 		Inserts a new dynamic targeting key. Keys must be created at the advertiser level before being assigned to the advertiser's ads, creatives, or placements. There is a maximum of 1000 keys per advertiser, out of which a maximum of 20 keys can be assigned per ad, creative, or placement.
 	**/

@@ -8,7 +8,7 @@ interface Videos {
 		*Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with must be linked to the specified YouTube content owner.
 	**/
 	@:optional
-	var onBehalfOfContentOwner : String; }):Void;
+	var onBehalfOfContentOwner : String; }):tink.core.Noise;
 	/**
 		Retrieves the ratings that the authorized user gave to a list of specified videos.
 	**/
@@ -100,7 +100,7 @@ interface Videos {
 		Adds a like or dislike rating to a video or removes a rating from a video.
 	**/
 	@:post("/youtube/v3/videos/rate")
-	function rate(query:{ var id : String; var rating : grest.youtube.v3.types.Api_Videos_rate_rating; }):Void;
+	function rate(query:{ var id : String; var rating : grest.youtube.v3.types.Api_Videos_rate_rating; }):tink.core.Noise;
 	/**
 		Report abuse for a video.
 	**/
@@ -109,7 +109,7 @@ interface Videos {
 		*Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.
 	**/
 	@:optional
-	var onBehalfOfContentOwner : String; }, body:grest.youtube.v3.types.VideoAbuseReport):Void;
+	var onBehalfOfContentOwner : String; }, body:grest.youtube.v3.types.VideoAbuseReport):tink.core.Noise;
 	/**
 		Updates an existing resource.
 	**/

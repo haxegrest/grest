@@ -9,7 +9,7 @@ interface Variants {
 		Downloads a previously created system APK which is suitable for inclusion in a system image.
 	**/
 	@:get("/androidpublisher/v3/applications/$packageName/systemApks/$versionCode/variants/$variantId")
-	function download(packageName:String, versionCode:String, variantId:grest.androidpublisher.v3.types.Api_androidpublisher_systemapks_variants_download_variantId_Command):Void;
+	function download(packageName:String, versionCode:String, variantId:grest.androidpublisher.v3.types.Api_androidpublisher_systemapks_variants_download_variantId_Command):tink.core.Noise;
 	/**
 		Returns a previously created system APK variant.
 	**/

@@ -29,7 +29,7 @@ interface Accounts {
 		Flag to delete sub-accounts with products. The default value is false.
 	**/
 	@:optional
-	var force : Bool; }):Void;
+	var force : Bool; }):tink.core.Noise;
 	/**
 		Retrieves a Merchant Center account.
 	**/

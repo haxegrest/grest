@@ -9,7 +9,7 @@ interface Replies {
 		Deletes a reply.
 	**/
 	@:delete("/drive/v3/files/$fileId/comments/$commentId/replies/$replyId")
-	function delete(fileId:String, commentId:String, replyId:String):Void;
+	function delete(fileId:String, commentId:String, replyId:String):tink.core.Noise;
 	/**
 		Gets a reply by ID.
 	**/

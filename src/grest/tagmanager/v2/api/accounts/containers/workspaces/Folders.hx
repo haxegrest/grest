@@ -9,7 +9,7 @@ interface Folders {
 		Deletes a GTM Folder.
 	**/
 	@:delete("/tagmanager/v2/$path")
-	function delete(path:String):Void;
+	function delete(path:String):tink.core.Noise;
 	/**
 		List all entities in a GTM Folder.
 	**/
@@ -49,7 +49,7 @@ interface Folders {
 		The variables to be moved to the folder.
 	**/
 	@:optional
-	var variableId : String; }, body:grest.tagmanager.v2.types.Folder):Void;
+	var variableId : String; }, body:grest.tagmanager.v2.types.Folder):tink.core.Noise;
 	/**
 		Reverts changes to a GTM Folder in a GTM Workspace.
 	**/
