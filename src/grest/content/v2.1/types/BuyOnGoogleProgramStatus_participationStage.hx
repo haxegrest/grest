@@ -1,0 +1,12 @@
+package grest.content.v2.1.types;
+@:enum abstract BuyOnGoogleProgramStatus_participationStage(String) from String to String to tink.Stringly {
+	var ACTIVE = "ACTIVE";
+	var ELIGIBLE = "ELIGIBLE";
+	var ELIGIBLE_FOR_REVIEW = "ELIGIBLE_FOR_REVIEW";
+	var NOT_ELIGIBLE = "NOT_ELIGIBLE";
+	var ONBOARDING = "ONBOARDING";
+	var PAUSED = "PAUSED";
+	var PENDING_REVIEW = "PENDING_REVIEW";
+	var PROGRAM_PARTICIPATION_STAGE_UNSPECIFIED = "PROGRAM_PARTICIPATION_STAGE_UNSPECIFIED";
+	var REVIEW_DISAPPROVED = "REVIEW_DISAPPROVED";
+}

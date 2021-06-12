@@ -1,0 +1,6 @@
+package grest.accessapproval.v1.types;
+abstract Api_accessapproval_organizations_approvalRequests_dismiss_name_Command(String) to String to tink.Stringly {
+	@:from
+	public static inline function fromString(v:String) return new grest.accessapproval.v1.types.Api_accessapproval_organizations_approvalRequests_dismiss_name_Command(v + ":dismiss");
+	inline function new(v:String) this = v;
+}

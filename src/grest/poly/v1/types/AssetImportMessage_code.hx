@@ -1,0 +1,13 @@
+package grest.poly.v1.types;
+@:enum abstract AssetImportMessage_code(String) from String to String to tink.Stringly {
+	var CODE_UNSPECIFIED = "CODE_UNSPECIFIED";
+	var DEFAULT_MATERIALS = "DEFAULT_MATERIALS";
+	var EMPTY_MODEL = "EMPTY_MODEL";
+	var EXPIRED = "EXPIRED";
+	var EXTRA_FILES_WITH_ARCHIVE = "EXTRA_FILES_WITH_ARCHIVE";
+	var FATAL_ERROR = "FATAL_ERROR";
+	var IMAGE_ERROR = "IMAGE_ERROR";
+	var INVALID_ELEMENT_TYPE = "INVALID_ELEMENT_TYPE";
+	var NO_IMPORTABLE_FILE = "NO_IMPORTABLE_FILE";
+	var OBJ_PARSE_ERROR = "OBJ_PARSE_ERROR";
+}

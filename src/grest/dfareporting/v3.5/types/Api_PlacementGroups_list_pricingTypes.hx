@@ -1,0 +1,9 @@
+package grest.dfareporting.v3.5.types;
+@:enum abstract Api_PlacementGroups_list_pricingTypes(String) from String to String to tink.Stringly {
+	var PRICING_TYPE_CPA = "PRICING_TYPE_CPA";
+	var PRICING_TYPE_CPC = "PRICING_TYPE_CPC";
+	var PRICING_TYPE_CPM = "PRICING_TYPE_CPM";
+	var PRICING_TYPE_CPM_ACTIVEVIEW = "PRICING_TYPE_CPM_ACTIVEVIEW";
+	var PRICING_TYPE_FLAT_RATE_CLICKS = "PRICING_TYPE_FLAT_RATE_CLICKS";
+	var PRICING_TYPE_FLAT_RATE_IMPRESSIONS = "PRICING_TYPE_FLAT_RATE_IMPRESSIONS";
+}

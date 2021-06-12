@@ -1,0 +1,6 @@
+package grest.displayvideo.v1.types;
+@:enum abstract InventorySource_inventorySourceType(String) from String to String to tink.Stringly {
+	var INVENTORY_SOURCE_TYPE_AUCTION_PACKAGE = "INVENTORY_SOURCE_TYPE_AUCTION_PACKAGE";
+	var INVENTORY_SOURCE_TYPE_PRIVATE = "INVENTORY_SOURCE_TYPE_PRIVATE";
+	var INVENTORY_SOURCE_TYPE_UNSPECIFIED = "INVENTORY_SOURCE_TYPE_UNSPECIFIED";
+}

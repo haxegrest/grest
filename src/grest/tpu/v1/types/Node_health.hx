@@ -1,0 +1,9 @@
+package grest.tpu.v1.types;
+@:enum abstract Node_health(String) from String to String to tink.Stringly {
+	var DEPRECATED_UNHEALTHY = "DEPRECATED_UNHEALTHY";
+	var HEALTHY = "HEALTHY";
+	var HEALTH_UNSPECIFIED = "HEALTH_UNSPECIFIED";
+	var TIMEOUT = "TIMEOUT";
+	var UNHEALTHY_MAINTENANCE = "UNHEALTHY_MAINTENANCE";
+	var UNHEALTHY_TENSORFLOW = "UNHEALTHY_TENSORFLOW";
+}

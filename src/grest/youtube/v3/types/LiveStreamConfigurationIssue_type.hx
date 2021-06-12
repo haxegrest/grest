@@ -1,0 +1,37 @@
+package grest.youtube.v3.types;
+@:enum abstract LiveStreamConfigurationIssue_type(String) from String to String to tink.Stringly {
+	var audioBitrateHigh = "audioBitrateHigh";
+	var audioBitrateLow = "audioBitrateLow";
+	var audioBitrateMismatch = "audioBitrateMismatch";
+	var audioCodec = "audioCodec";
+	var audioCodecMismatch = "audioCodecMismatch";
+	var audioSampleRate = "audioSampleRate";
+	var audioSampleRateMismatch = "audioSampleRateMismatch";
+	var audioStereoMismatch = "audioStereoMismatch";
+	var audioTooManyChannels = "audioTooManyChannels";
+	var badContainer = "badContainer";
+	var bitrateHigh = "bitrateHigh";
+	var bitrateLow = "bitrateLow";
+	var frameRateHigh = "frameRateHigh";
+	var framerateMismatch = "framerateMismatch";
+	var gopMismatch = "gopMismatch";
+	var gopSizeLong = "gopSizeLong";
+	var gopSizeOver = "gopSizeOver";
+	var gopSizeShort = "gopSizeShort";
+	var interlacedVideo = "interlacedVideo";
+	var multipleAudioStreams = "multipleAudioStreams";
+	var multipleVideoStreams = "multipleVideoStreams";
+	var noAudioStream = "noAudioStream";
+	var noVideoStream = "noVideoStream";
+	var openGop = "openGop";
+	var resolutionMismatch = "resolutionMismatch";
+	var videoBitrateMismatch = "videoBitrateMismatch";
+	var videoCodec = "videoCodec";
+	var videoCodecMismatch = "videoCodecMismatch";
+	var videoIngestionFasterThanRealtime = "videoIngestionFasterThanRealtime";
+	var videoIngestionStarved = "videoIngestionStarved";
+	var videoInterlaceMismatch = "videoInterlaceMismatch";
+	var videoProfileMismatch = "videoProfileMismatch";
+	var videoResolutionSuboptimal = "videoResolutionSuboptimal";
+	var videoResolutionUnsupported = "videoResolutionUnsupported";
+}

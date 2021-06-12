@@ -1,0 +1,11 @@
+package grest.dataflow.v1b3.types;
+@:enum abstract WorkerLifecycleEvent_event(String) from String to String to tink.Stringly {
+	var CONTAINER_START = "CONTAINER_START";
+	var NETWORK_UP = "NETWORK_UP";
+	var OS_START = "OS_START";
+	var SDK_INSTALL_FINISH = "SDK_INSTALL_FINISH";
+	var SDK_INSTALL_START = "SDK_INSTALL_START";
+	var STAGING_FILES_DOWNLOAD_FINISH = "STAGING_FILES_DOWNLOAD_FINISH";
+	var STAGING_FILES_DOWNLOAD_START = "STAGING_FILES_DOWNLOAD_START";
+	var UNKNOWN_EVENT = "UNKNOWN_EVENT";
+}

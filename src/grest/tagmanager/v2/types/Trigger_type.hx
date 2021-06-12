@@ -1,0 +1,38 @@
+package grest.tagmanager.v2.types;
+@:enum abstract Trigger_type(String) from String to String to tink.Stringly {
+	var always = "always";
+	var ampClick = "ampClick";
+	var ampScroll = "ampScroll";
+	var ampTimer = "ampTimer";
+	var ampVisibility = "ampVisibility";
+	var click = "click";
+	var consentInit = "consentInit";
+	var customEvent = "customEvent";
+	var domReady = "domReady";
+	var elementVisibility = "elementVisibility";
+	var eventTypeUnspecified = "eventTypeUnspecified";
+	var firebaseAppException = "firebaseAppException";
+	var firebaseAppUpdate = "firebaseAppUpdate";
+	var firebaseCampaign = "firebaseCampaign";
+	var firebaseFirstOpen = "firebaseFirstOpen";
+	var firebaseInAppPurchase = "firebaseInAppPurchase";
+	var firebaseNotificationDismiss = "firebaseNotificationDismiss";
+	var firebaseNotificationForeground = "firebaseNotificationForeground";
+	var firebaseNotificationOpen = "firebaseNotificationOpen";
+	var firebaseNotificationReceive = "firebaseNotificationReceive";
+	var firebaseOsUpdate = "firebaseOsUpdate";
+	var firebaseSessionStart = "firebaseSessionStart";
+	var firebaseUserEngagement = "firebaseUserEngagement";
+	var formSubmission = "formSubmission";
+	var historyChange = "historyChange";
+	var init = "init";
+	var jsError = "jsError";
+	var linkClick = "linkClick";
+	var pageview = "pageview";
+	var scrollDepth = "scrollDepth";
+	var serverPageview = "serverPageview";
+	var timer = "timer";
+	var triggerGroup = "triggerGroup";
+	var windowLoaded = "windowLoaded";
+	var youTubeVideo = "youTubeVideo";
+}

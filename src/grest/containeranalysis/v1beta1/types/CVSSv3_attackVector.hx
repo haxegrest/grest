@@ -1,0 +1,8 @@
+package grest.containeranalysis.v1beta1.types;
+@:enum abstract CVSSv3_attackVector(String) from String to String to tink.Stringly {
+	var ATTACK_VECTOR_ADJACENT = "ATTACK_VECTOR_ADJACENT";
+	var ATTACK_VECTOR_LOCAL = "ATTACK_VECTOR_LOCAL";
+	var ATTACK_VECTOR_NETWORK = "ATTACK_VECTOR_NETWORK";
+	var ATTACK_VECTOR_PHYSICAL = "ATTACK_VECTOR_PHYSICAL";
+	var ATTACK_VECTOR_UNSPECIFIED = "ATTACK_VECTOR_UNSPECIFIED";
+}

@@ -1,0 +1,32 @@
+package grest.vectortile.v1.types;
+@:enum abstract Feature_type(String) from String to String to tink.Stringly {
+	var ADMINISTRATIVE_AREA1 = "ADMINISTRATIVE_AREA1";
+	var ARTERIAL_ROAD = "ARTERIAL_ROAD";
+	var BANK = "BANK";
+	var BAR = "BAR";
+	var BEACH = "BEACH";
+	var CAFE = "CAFE";
+	var CONTROLLED_ACCESS_HIGHWAY = "CONTROLLED_ACCESS_HIGHWAY";
+	var EVENT_VENUE = "EVENT_VENUE";
+	var FEATURE_TYPE_UNSPECIFIED = "FEATURE_TYPE_UNSPECIFIED";
+	var FERRY = "FERRY";
+	var FOOTPATH = "FOOTPATH";
+	var FOREST = "FOREST";
+	var HIGHWAY = "HIGHWAY";
+	var LOCALITY = "LOCALITY";
+	var LOCAL_ROAD = "LOCAL_ROAD";
+	var LODGING = "LODGING";
+	var PARK = "PARK";
+	var POLITICAL = "POLITICAL";
+	var RAIL = "RAIL";
+	var REGION = "REGION";
+	var RESTAURANT = "RESTAURANT";
+	var ROAD = "ROAD";
+	var SCHOOL = "SCHOOL";
+	var SEGMENT = "SEGMENT";
+	var SHOPPING = "SHOPPING";
+	var STRUCTURE = "STRUCTURE";
+	var SUBLOCALITY = "SUBLOCALITY";
+	var TOURIST_DESTINATION = "TOURIST_DESTINATION";
+	var WATER = "WATER";
+}

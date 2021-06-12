@@ -1,0 +1,8 @@
+package grest.sheets.v4.types;
+@:enum abstract ChartSpec_hiddenDimensionStrategy(String) from String to String to tink.Stringly {
+	var CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED = "CHART_HIDDEN_DIMENSION_STRATEGY_UNSPECIFIED";
+	var SHOW_ALL = "SHOW_ALL";
+	var SKIP_HIDDEN_COLUMNS = "SKIP_HIDDEN_COLUMNS";
+	var SKIP_HIDDEN_ROWS = "SKIP_HIDDEN_ROWS";
+	var SKIP_HIDDEN_ROWS_AND_COLUMNS = "SKIP_HIDDEN_ROWS_AND_COLUMNS";
+}

@@ -1,0 +1,8 @@
+package grest.cloudsearch.v1.types;
+@:enum abstract ProcessingError_code(String) from String to String to tink.Stringly {
+	var ACL_CYCLE = "ACL_CYCLE";
+	var INDIRECT_BROKEN_ACL = "INDIRECT_BROKEN_ACL";
+	var MALFORMED_REQUEST = "MALFORMED_REQUEST";
+	var PROCESSING_ERROR_CODE_UNSPECIFIED = "PROCESSING_ERROR_CODE_UNSPECIFIED";
+	var UNSUPPORTED_CONTENT_FORMAT = "UNSUPPORTED_CONTENT_FORMAT";
+}

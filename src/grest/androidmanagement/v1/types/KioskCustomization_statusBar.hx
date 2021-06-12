@@ -1,0 +1,7 @@
+package grest.androidmanagement.v1.types;
+@:enum abstract KioskCustomization_statusBar(String) from String to String to tink.Stringly {
+	var NOTIFICATIONS_AND_SYSTEM_INFO_DISABLED = "NOTIFICATIONS_AND_SYSTEM_INFO_DISABLED";
+	var NOTIFICATIONS_AND_SYSTEM_INFO_ENABLED = "NOTIFICATIONS_AND_SYSTEM_INFO_ENABLED";
+	var STATUS_BAR_UNSPECIFIED = "STATUS_BAR_UNSPECIFIED";
+	var SYSTEM_INFO_ONLY = "SYSTEM_INFO_ONLY";
+}

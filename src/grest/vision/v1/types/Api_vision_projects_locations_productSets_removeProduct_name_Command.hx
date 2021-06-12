@@ -1,0 +1,6 @@
+package grest.vision.v1.types;
+abstract Api_vision_projects_locations_productSets_removeProduct_name_Command(String) to String to tink.Stringly {
+	@:from
+	public static inline function fromString(v:String) return new grest.vision.v1.types.Api_vision_projects_locations_productSets_removeProduct_name_Command(v + ":removeProduct");
+	inline function new(v:String) this = v;
+}

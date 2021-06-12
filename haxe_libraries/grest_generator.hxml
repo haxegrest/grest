@@ -1,0 +1,4 @@
+# @install: lix --silent download "gh://github.com/haxegrest/grest_generator#6b4807abd9d20110044f2cb880061812c55d6479" into grest_generator/0.0.0/github/6b4807abd9d20110044f2cb880061812c55d6479
+-lib grest_discovery
+-cp ${HAXE_LIBCACHE}/grest_generator/0.0.0/github/6b4807abd9d20110044f2cb880061812c55d6479/src
+-D grest_generator=0.0.0

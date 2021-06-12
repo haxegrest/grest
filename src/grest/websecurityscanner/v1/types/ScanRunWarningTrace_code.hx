@@ -1,0 +1,9 @@
+package grest.websecurityscanner.v1.types;
+@:enum abstract ScanRunWarningTrace_code(String) from String to String to tink.Stringly {
+	var BLOCKED_BY_IAP = "BLOCKED_BY_IAP";
+	var CODE_UNSPECIFIED = "CODE_UNSPECIFIED";
+	var INSUFFICIENT_CRAWL_RESULTS = "INSUFFICIENT_CRAWL_RESULTS";
+	var NO_STARTING_URL_FOUND_FOR_MANAGED_SCAN = "NO_STARTING_URL_FOUND_FOR_MANAGED_SCAN";
+	var TOO_MANY_CRAWL_RESULTS = "TOO_MANY_CRAWL_RESULTS";
+	var TOO_MANY_FUZZ_TASKS = "TOO_MANY_FUZZ_TASKS";
+}

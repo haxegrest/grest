@@ -1,0 +1,7 @@
+package grest.dlp.v2.types;
+@:enum abstract GooglePrivacyDlpV2ExclusionRule_matchingType(String) from String to String to tink.Stringly {
+	var MATCHING_TYPE_FULL_MATCH = "MATCHING_TYPE_FULL_MATCH";
+	var MATCHING_TYPE_INVERSE_MATCH = "MATCHING_TYPE_INVERSE_MATCH";
+	var MATCHING_TYPE_PARTIAL_MATCH = "MATCHING_TYPE_PARTIAL_MATCH";
+	var MATCHING_TYPE_UNSPECIFIED = "MATCHING_TYPE_UNSPECIFIED";
+}

@@ -1,0 +1,8 @@
+package grest.admob.v1.types;
+@:enum abstract ReportWarning_type(String) from String to String to tink.Stringly {
+	var DATA_BEFORE_ACCOUNT_TIMEZONE_CHANGE = "DATA_BEFORE_ACCOUNT_TIMEZONE_CHANGE";
+	var DATA_DELAYED = "DATA_DELAYED";
+	var OTHER = "OTHER";
+	var REPORT_CURRENCY_NOT_ACCOUNT_CURRENCY = "REPORT_CURRENCY_NOT_ACCOUNT_CURRENCY";
+	var TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED";
+}

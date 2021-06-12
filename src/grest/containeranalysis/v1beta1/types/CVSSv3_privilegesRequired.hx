@@ -1,0 +1,7 @@
+package grest.containeranalysis.v1beta1.types;
+@:enum abstract CVSSv3_privilegesRequired(String) from String to String to tink.Stringly {
+	var PRIVILEGES_REQUIRED_HIGH = "PRIVILEGES_REQUIRED_HIGH";
+	var PRIVILEGES_REQUIRED_LOW = "PRIVILEGES_REQUIRED_LOW";
+	var PRIVILEGES_REQUIRED_NONE = "PRIVILEGES_REQUIRED_NONE";
+	var PRIVILEGES_REQUIRED_UNSPECIFIED = "PRIVILEGES_REQUIRED_UNSPECIFIED";
+}

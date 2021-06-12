@@ -1,0 +1,18 @@
+package grest.language.v1.types;
+@:enum abstract PartOfSpeech_case(String) from String to String to tink.Stringly {
+	var ACCUSATIVE = "ACCUSATIVE";
+	var ADVERBIAL = "ADVERBIAL";
+	var CASE_UNKNOWN = "CASE_UNKNOWN";
+	var COMPLEMENTIVE = "COMPLEMENTIVE";
+	var DATIVE = "DATIVE";
+	var GENITIVE = "GENITIVE";
+	var INSTRUMENTAL = "INSTRUMENTAL";
+	var LOCATIVE = "LOCATIVE";
+	var NOMINATIVE = "NOMINATIVE";
+	var OBLIQUE = "OBLIQUE";
+	var PARTITIVE = "PARTITIVE";
+	var PREPOSITIONAL = "PREPOSITIONAL";
+	var REFLEXIVE_CASE = "REFLEXIVE_CASE";
+	var RELATIVE_CASE = "RELATIVE_CASE";
+	var VOCATIVE = "VOCATIVE";
+}

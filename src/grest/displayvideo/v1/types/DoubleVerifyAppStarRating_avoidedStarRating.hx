@@ -1,0 +1,11 @@
+package grest.displayvideo.v1.types;
+@:enum abstract DoubleVerifyAppStarRating_avoidedStarRating(String) from String to String to tink.Stringly {
+	var APP_STAR_RATE_1_POINT_5_LESS = "APP_STAR_RATE_1_POINT_5_LESS";
+	var APP_STAR_RATE_2_LESS = "APP_STAR_RATE_2_LESS";
+	var APP_STAR_RATE_2_POINT_5_LESS = "APP_STAR_RATE_2_POINT_5_LESS";
+	var APP_STAR_RATE_3_LESS = "APP_STAR_RATE_3_LESS";
+	var APP_STAR_RATE_3_POINT_5_LESS = "APP_STAR_RATE_3_POINT_5_LESS";
+	var APP_STAR_RATE_4_LESS = "APP_STAR_RATE_4_LESS";
+	var APP_STAR_RATE_4_POINT_5_LESS = "APP_STAR_RATE_4_POINT_5_LESS";
+	var APP_STAR_RATE_UNSPECIFIED = "APP_STAR_RATE_UNSPECIFIED";
+}

@@ -1,0 +1,6 @@
+package grest.dataflow.v1b3.types;
+@:enum abstract SourceSplitResponse_outcome(String) from String to String to tink.Stringly {
+	var SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED = "SOURCE_SPLIT_OUTCOME_SPLITTING_HAPPENED";
+	var SOURCE_SPLIT_OUTCOME_UNKNOWN = "SOURCE_SPLIT_OUTCOME_UNKNOWN";
+	var SOURCE_SPLIT_OUTCOME_USE_CURRENT = "SOURCE_SPLIT_OUTCOME_USE_CURRENT";
+}

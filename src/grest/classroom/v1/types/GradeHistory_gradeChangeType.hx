@@ -1,0 +1,7 @@
+package grest.classroom.v1.types;
+@:enum abstract GradeHistory_gradeChangeType(String) from String to String to tink.Stringly {
+	var ASSIGNED_GRADE_POINTS_EARNED_CHANGE = "ASSIGNED_GRADE_POINTS_EARNED_CHANGE";
+	var DRAFT_GRADE_POINTS_EARNED_CHANGE = "DRAFT_GRADE_POINTS_EARNED_CHANGE";
+	var MAX_POINTS_CHANGE = "MAX_POINTS_CHANGE";
+	var UNKNOWN_GRADE_CHANGE_TYPE = "UNKNOWN_GRADE_CHANGE_TYPE";
+}

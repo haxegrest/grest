@@ -1,0 +1,6 @@
+package grest.displayvideo.v1.types;
+@:enum abstract LocationList_locationType(String) from String to String to tink.Stringly {
+	var TARGETING_LOCATION_TYPE_PROXIMITY = "TARGETING_LOCATION_TYPE_PROXIMITY";
+	var TARGETING_LOCATION_TYPE_REGIONAL = "TARGETING_LOCATION_TYPE_REGIONAL";
+	var TARGETING_LOCATION_TYPE_UNSPECIFIED = "TARGETING_LOCATION_TYPE_UNSPECIFIED";
+}

@@ -1,0 +1,19 @@
+package grest.dfareporting.v3.5.types;
+@:enum abstract DeliverySchedule_priority(String) from String to String to tink.Stringly {
+	var AD_PRIORITY_01 = "AD_PRIORITY_01";
+	var AD_PRIORITY_02 = "AD_PRIORITY_02";
+	var AD_PRIORITY_03 = "AD_PRIORITY_03";
+	var AD_PRIORITY_04 = "AD_PRIORITY_04";
+	var AD_PRIORITY_05 = "AD_PRIORITY_05";
+	var AD_PRIORITY_06 = "AD_PRIORITY_06";
+	var AD_PRIORITY_07 = "AD_PRIORITY_07";
+	var AD_PRIORITY_08 = "AD_PRIORITY_08";
+	var AD_PRIORITY_09 = "AD_PRIORITY_09";
+	var AD_PRIORITY_10 = "AD_PRIORITY_10";
+	var AD_PRIORITY_11 = "AD_PRIORITY_11";
+	var AD_PRIORITY_12 = "AD_PRIORITY_12";
+	var AD_PRIORITY_13 = "AD_PRIORITY_13";
+	var AD_PRIORITY_14 = "AD_PRIORITY_14";
+	var AD_PRIORITY_15 = "AD_PRIORITY_15";
+	var AD_PRIORITY_16 = "AD_PRIORITY_16";
+}

@@ -1,0 +1,28 @@
+package grest.content.v2.1.types;
+typedef ShippingsettingsCustomBatchRequestEntry = {
+	/**
+		The ID of the account for which to get/update account shipping settings.
+	**/
+	@:optional
+	var accountId : String;
+	/**
+		An entry ID, unique within the batch request.
+	**/
+	@:optional
+	var batchId : Int;
+	/**
+		The ID of the managing account.
+	**/
+	@:optional
+	var merchantId : String;
+	/**
+		The method of the batch entry. Acceptable values are: - "`get`" - "`update`" 
+	**/
+	@:optional
+	var method : String;
+	/**
+		The account shipping settings to update. Only defined if the method is `update`.
+	**/
+	@:optional
+	var shippingSettings : ShippingSettings;
+}

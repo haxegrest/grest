@@ -1,0 +1,14 @@
+package grest.androidmanagement.v1.types;
+@:enum abstract NonComplianceDetailCondition_nonComplianceReason(String) from String to String to tink.Stringly {
+	var API_LEVEL = "API_LEVEL";
+	var APP_INCOMPATIBLE = "APP_INCOMPATIBLE";
+	var APP_INSTALLED = "APP_INSTALLED";
+	var APP_NOT_INSTALLED = "APP_NOT_INSTALLED";
+	var APP_NOT_UPDATED = "APP_NOT_UPDATED";
+	var INVALID_VALUE = "INVALID_VALUE";
+	var MANAGEMENT_MODE = "MANAGEMENT_MODE";
+	var NON_COMPLIANCE_REASON_UNSPECIFIED = "NON_COMPLIANCE_REASON_UNSPECIFIED";
+	var PENDING = "PENDING";
+	var UNSUPPORTED = "UNSUPPORTED";
+	var USER_ACTION = "USER_ACTION";
+}

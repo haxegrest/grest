@@ -1,0 +1,6 @@
+package grest.displayvideo.v1.types;
+@:enum abstract PartnerCost_invoiceType(String) from String to String to tink.Stringly {
+	var PARTNER_COST_INVOICE_TYPE_DV360 = "PARTNER_COST_INVOICE_TYPE_DV360";
+	var PARTNER_COST_INVOICE_TYPE_PARTNER = "PARTNER_COST_INVOICE_TYPE_PARTNER";
+	var PARTNER_COST_INVOICE_TYPE_UNSPECIFIED = "PARTNER_COST_INVOICE_TYPE_UNSPECIFIED";
+}

@@ -1,0 +1,12 @@
+package grest.speech.v1.types;
+@:enum abstract RecognitionMetadata_interactionType(String) from String to String to tink.Stringly {
+	var DICTATION = "DICTATION";
+	var DISCUSSION = "DISCUSSION";
+	var INTERACTION_TYPE_UNSPECIFIED = "INTERACTION_TYPE_UNSPECIFIED";
+	var PHONE_CALL = "PHONE_CALL";
+	var PRESENTATION = "PRESENTATION";
+	var PROFESSIONALLY_PRODUCED = "PROFESSIONALLY_PRODUCED";
+	var VOICEMAIL = "VOICEMAIL";
+	var VOICE_COMMAND = "VOICE_COMMAND";
+	var VOICE_SEARCH = "VOICE_SEARCH";
+}

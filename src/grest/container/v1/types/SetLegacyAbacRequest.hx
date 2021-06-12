@@ -1,0 +1,28 @@
+package grest.container.v1.types;
+typedef SetLegacyAbacRequest = {
+	/**
+		Deprecated. The name of the cluster to update. This field has been deprecated and replaced by the name field.
+	**/
+	@:optional
+	var clusterId : String;
+	/**
+		Required. Whether ABAC authorization will be enabled in the cluster.
+	**/
+	@:optional
+	var enabled : Bool;
+	/**
+		The name (project, location, cluster id) of the cluster to set legacy abac. Specified in the format `projects/*/locations/*/clusters/*`.
+	**/
+	@:optional
+	var name : String;
+	/**
+		Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
+	**/
+	@:optional
+	var projectId : String;
+	/**
+		Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+	**/
+	@:optional
+	var zone : String;
+}

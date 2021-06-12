@@ -1,0 +1,34 @@
+package grest.toolresults.v1beta3.types;
+@:enum abstract TestIssue_type(String) from String to String to tink.Stringly {
+	var anr = "anr";
+	var availableDeepLinks = "availableDeepLinks";
+	var blankScreen = "blankScreen";
+	var compatibleWithOrchestrator = "compatibleWithOrchestrator";
+	var completeRoboScriptExecution = "completeRoboScriptExecution";
+	var crashDialogError = "crashDialogError";
+	var deviceOutOfMemory = "deviceOutOfMemory";
+	var encounteredLoginScreen = "encounteredLoginScreen";
+	var encounteredNonAndroidUiWidgetScreen = "encounteredNonAndroidUiWidgetScreen";
+	var failedToInstall = "failedToInstall";
+	var fatalException = "fatalException";
+	var inAppPurchases = "inAppPurchases";
+	var incompleteRoboScriptExecution = "incompleteRoboScriptExecution";
+	var insufficientCoverage = "insufficientCoverage";
+	var iosCrash = "iosCrash";
+	var iosException = "iosException";
+	var launcherActivityNotFound = "launcherActivityNotFound";
+	var logcatCollectionError = "logcatCollectionError";
+	var nativeCrash = "nativeCrash";
+	var nonSdkApiUsageReport = "nonSdkApiUsageReport";
+	var nonSdkApiUsageViolation = "nonSdkApiUsageViolation";
+	var overlappingUiElements = "overlappingUiElements";
+	var performedGoogleLogin = "performedGoogleLogin";
+	var performedMonkeyActions = "performedMonkeyActions";
+	var startActivityNotFound = "startActivityNotFound";
+	var uiElementsTooDeep = "uiElementsTooDeep";
+	var unityException = "unityException";
+	var unspecifiedType = "unspecifiedType";
+	var unusedRoboDirective = "unusedRoboDirective";
+	var usedRoboDirective = "usedRoboDirective";
+	var usedRoboIgnoreDirective = "usedRoboIgnoreDirective";
+}

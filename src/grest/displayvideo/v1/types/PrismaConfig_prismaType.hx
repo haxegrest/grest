@@ -1,0 +1,10 @@
+package grest.displayvideo.v1.types;
+@:enum abstract PrismaConfig_prismaType(String) from String to String to tink.Stringly {
+	var PRISMA_TYPE_AUDIO = "PRISMA_TYPE_AUDIO";
+	var PRISMA_TYPE_DISPLAY = "PRISMA_TYPE_DISPLAY";
+	var PRISMA_TYPE_FEE = "PRISMA_TYPE_FEE";
+	var PRISMA_TYPE_SEARCH = "PRISMA_TYPE_SEARCH";
+	var PRISMA_TYPE_SOCIAL = "PRISMA_TYPE_SOCIAL";
+	var PRISMA_TYPE_UNSPECIFIED = "PRISMA_TYPE_UNSPECIFIED";
+	var PRISMA_TYPE_VIDEO = "PRISMA_TYPE_VIDEO";
+}

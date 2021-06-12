@@ -1,0 +1,9 @@
+package grest.dialogflow.v3.types;
+@:enum abstract GoogleCloudDialogflowCxV3ExperimentResultMetric_type(String) from String to String to tink.Stringly {
+	var ABANDONED_SESSION_RATE = "ABANDONED_SESSION_RATE";
+	var CALLBACK_SESSION_RATE = "CALLBACK_SESSION_RATE";
+	var CONTAINED_SESSION_NO_CALLBACK_RATE = "CONTAINED_SESSION_NO_CALLBACK_RATE";
+	var LIVE_AGENT_HANDOFF_RATE = "LIVE_AGENT_HANDOFF_RATE";
+	var METRIC_UNSPECIFIED = "METRIC_UNSPECIFIED";
+	var SESSION_END_RATE = "SESSION_END_RATE";
+}

@@ -1,0 +1,7 @@
+package grest.sheets.v4.types;
+@:enum abstract PivotValue_calculatedDisplayType(String) from String to String to tink.Stringly {
+	var PERCENT_OF_COLUMN_TOTAL = "PERCENT_OF_COLUMN_TOTAL";
+	var PERCENT_OF_GRAND_TOTAL = "PERCENT_OF_GRAND_TOTAL";
+	var PERCENT_OF_ROW_TOTAL = "PERCENT_OF_ROW_TOTAL";
+	var PIVOT_VALUE_CALCULATED_DISPLAY_TYPE_UNSPECIFIED = "PIVOT_VALUE_CALCULATED_DISPLAY_TYPE_UNSPECIFIED";
+}

@@ -1,0 +1,11 @@
+package grest.cloudkms.v1.types;
+@:enum abstract CryptoKeyVersion_state(String) from String to String to tink.Stringly {
+	var CRYPTO_KEY_VERSION_STATE_UNSPECIFIED = "CRYPTO_KEY_VERSION_STATE_UNSPECIFIED";
+	var DESTROYED = "DESTROYED";
+	var DESTROY_SCHEDULED = "DESTROY_SCHEDULED";
+	var DISABLED = "DISABLED";
+	var ENABLED = "ENABLED";
+	var IMPORT_FAILED = "IMPORT_FAILED";
+	var PENDING_GENERATION = "PENDING_GENERATION";
+	var PENDING_IMPORT = "PENDING_IMPORT";
+}

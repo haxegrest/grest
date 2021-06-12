@@ -1,0 +1,6 @@
+package grest.people.v1.types;
+@:enum abstract Api_People_searchDirectoryPeople_sources(String) from String to String to tink.Stringly {
+	var DIRECTORY_SOURCE_TYPE_DOMAIN_CONTACT = "DIRECTORY_SOURCE_TYPE_DOMAIN_CONTACT";
+	var DIRECTORY_SOURCE_TYPE_DOMAIN_PROFILE = "DIRECTORY_SOURCE_TYPE_DOMAIN_PROFILE";
+	var DIRECTORY_SOURCE_TYPE_UNSPECIFIED = "DIRECTORY_SOURCE_TYPE_UNSPECIFIED";
+}

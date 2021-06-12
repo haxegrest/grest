@@ -1,0 +1,11 @@
+package grest.androidmanagement.v1.types;
+@:enum abstract PowerManagementEvent_eventType(String) from String to String to tink.Stringly {
+	var BATTERY_LEVEL_COLLECTED = "BATTERY_LEVEL_COLLECTED";
+	var BATTERY_LOW = "BATTERY_LOW";
+	var BATTERY_OKAY = "BATTERY_OKAY";
+	var BOOT_COMPLETED = "BOOT_COMPLETED";
+	var POWER_CONNECTED = "POWER_CONNECTED";
+	var POWER_DISCONNECTED = "POWER_DISCONNECTED";
+	var POWER_MANAGEMENT_EVENT_TYPE_UNSPECIFIED = "POWER_MANAGEMENT_EVENT_TYPE_UNSPECIFIED";
+	var SHUTDOWN = "SHUTDOWN";
+}

@@ -1,0 +1,10 @@
+package grest.websecurityscanner.v1.types;
+@:enum abstract ScanRunErrorTrace_code(String) from String to String to tink.Stringly {
+	var AUTHENTICATION_CONFIG_ISSUE = "AUTHENTICATION_CONFIG_ISSUE";
+	var CODE_UNSPECIFIED = "CODE_UNSPECIFIED";
+	var INTERNAL_ERROR = "INTERNAL_ERROR";
+	var SCAN_CONFIG_ISSUE = "SCAN_CONFIG_ISSUE";
+	var TIMED_OUT_WHILE_SCANNING = "TIMED_OUT_WHILE_SCANNING";
+	var TOO_MANY_HTTP_ERRORS = "TOO_MANY_HTTP_ERRORS";
+	var TOO_MANY_REDIRECTS = "TOO_MANY_REDIRECTS";
+}
