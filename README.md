@@ -21,4 +21,4 @@ calendarApi.calendarList().list({})
 
 ## Development
 
-To update, run
+To update, run `haxe -lib grest_generator --run Generate`
